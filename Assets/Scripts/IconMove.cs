@@ -8,6 +8,7 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         transform.position += new Vector3(moveAmount, 0f, 0f);
+        
     }
 
     public void TurnLeft()
