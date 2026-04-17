@@ -6,7 +6,7 @@ public class CameraDisplay : MonoBehaviour
     public Sprite Image;
     float timer;
 
-    void ShowImage()
+    public void ShowImage()
     {
         timer = 0;
         this.GetComponent<SpriteRenderer>().sprite = Image;
