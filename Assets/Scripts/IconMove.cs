@@ -3,7 +3,7 @@ using UnityEngine;
 public class IconMove : MonoBehaviour
 {
     public float moveAmount = 0.5f;
-    public float turnAmount = 90f;
+    public float turnAmount = 360f;
 
     public void MoveForward()
     {
