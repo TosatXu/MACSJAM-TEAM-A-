@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 291611861}
   - component: {fileID: 291611862}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Main Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 346537640}
   - component: {fileID: 346537641}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: MapGridSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2170,7 +2170,7 @@ GameObject:
   - component: {fileID: 1116650298}
   - component: {fileID: 1116650299}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: RoverMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2443,7 +2443,7 @@ GameObject:
   - component: {fileID: 1819566608}
   - component: {fileID: 1819566609}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: RoverCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
