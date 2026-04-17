@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 818df04f9a2fc6f41bd7a4b706fa496a
+guid: 999b23a878137c9449632d919e51e941
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2352818853745054449
-    second: SideArrow_0
+      213: -2286668018638609285
+    second: Expanse2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SideArrow_0
+      name: Expanse2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 28
+        width: 1024
+        height: 384
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f2d05e1844e6a020800000000000000
-      internalID: 2352818853745054449
+      spriteID: b74acc56d8f1440e0800000000000000
+      internalID: -2286668018638609285
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bdf03f3b89327b245b435e255b18e662
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SideArrow_0: 2352818853745054449
+      Expanse2_0: -2286668018638609285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
