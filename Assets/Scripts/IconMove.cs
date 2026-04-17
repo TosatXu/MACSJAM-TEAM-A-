@@ -8,6 +8,10 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         transform.position += transform.right * moveAmount;
+        if (turnAmount < 0)
+        {
+        transform.position += transform.left * moveAmount;   
+        }
     }
 
     public void TurnLeft()
