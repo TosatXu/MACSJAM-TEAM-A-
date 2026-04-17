@@ -259,7 +259,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 29351417}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -802,8 +802,8 @@ Transform:
   m_GameObject: {fileID: 143366213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.57, y: -1.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.57, y: -2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -857,7 +857,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 1349180431371488363, guid: f1371a3595778784ea49e9e3635beb26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -893,7 +893,7 @@ Transform:
   m_GameObject: {fileID: 291611860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.76, y: 1.1, z: 0}
+  m_LocalPosition: {x: -0.76, y: 1.1, z: 1}
   m_LocalScale: {x: 18.382761, y: 11.378978, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3096,6 +3096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819566608}
   - component: {fileID: 1819566609}
+  - component: {fileID: 1819566610}
   m_Layer: 0
   m_Name: RoverCamera
   m_TagString: Untagged
@@ -3113,7 +3114,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.63, y: 2.01, z: 0}
-  m_LocalScale: {x: 5.0631175, y: 3.8283112, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -3177,6 +3178,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1819566610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819566607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2204fb1ff78de409f0709ece0808cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraDisplay
+  Screen: {fileID: 7482667652216324306, guid: 5359379b24a1d7c42a8dc3ba079d1667, type: 3}
+  Image: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
 --- !u!1 &1851615535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,8 +3309,8 @@ Transform:
   m_GameObject: {fileID: 2007270151}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.43, y: -1.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.43, y: -2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -3349,7 +3364,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -8441987308474761458, guid: 5e9ae7c2939a8e04d8243eb1b40aa591, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

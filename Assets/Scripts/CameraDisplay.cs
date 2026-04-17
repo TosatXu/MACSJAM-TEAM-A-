@@ -2,6 +2,22 @@ using UnityEngine;
 
 public class CameraDisplay : MonoBehaviour
 {
-    public Texture2D Screen;
-    public Texture2D Image;
+    public Sprite Screen;
+    public Sprite Image;
+    float timer;
+
+    void ShowImage()
+    {
+        timer = 0;
+        this.GetComponent<SpriteRenderer>().sprite = Image;
+    }
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if(timer > 2)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = Screen;
+        }
+    }
 }
