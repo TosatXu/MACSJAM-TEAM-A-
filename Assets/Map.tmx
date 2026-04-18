@@ -61,7 +61,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="4" name="GridVertical" width="16" height="16" opacity="0.3" offsetx="0.2" offsety="0">
+ <layer id="4" name="GridVertical" width="16" height="16" opacity="0.05" offsetx="0.2" offsety="0">
   <data encoding="csv">
 293,293,293,293,293,293,293,293,293,293,293,293,293,293,293,0,
 293,293,293,293,293,293,293,293,293,293,293,293,293,293,293,0,
@@ -81,7 +81,7 @@
 293,293,293,293,293,293,293,293,293,293,293,293,293,293,293,0
 </data>
  </layer>
- <layer id="5" name="GridHorizontal" width="16" height="16" opacity="0.3" offsetx="0" offsety="0.2">
+ <layer id="5" name="GridHorizontal" width="16" height="16" opacity="0.05" offsetx="0" offsety="0.2">
   <data encoding="csv">
 312,312,312,312,312,312,312,312,312,312,312,312,312,312,312,312,
 312,312,312,312,312,312,312,312,312,312,312,312,312,312,312,312,

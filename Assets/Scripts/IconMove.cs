@@ -16,7 +16,7 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         // Moves in whatever direction the icon is currently facing
-        if (collider1.GetComponent<CollisionDetector>().collisionLayer == 0)
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
         {
             transform.position += transform.right * moveAmount;
         }
