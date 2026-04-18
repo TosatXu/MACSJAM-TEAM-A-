@@ -1,0 +1,67 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Map.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Map.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 127.75,
+                "y": 127.75
+            }
+        },
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/monochrome_tilemap_transparent_packed..tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/Year 1/COMP1151/comp1151-game-prototype-TosatXu/COMP1151 Game Prototype/Assets/Tiled/monochrome_tilemap_transparent_packed.tsx": {
+            "scaleInDock": 1
+        },
+        "Map.tmx": {
+            "scale": 1.3767578125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.1997446446304,
+                "y": 128.19974464463047
+            }
+        },
+        "monochrome_tilemap_transparent_packed..tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Tiled/Tilemap",
+    "map.height": 16,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 16,
+    "openFiles": [
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Tileset.tsx",
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Map.tmx"
+    ],
+    "project": "Tiled.tiled-project",
+    "recentFiles": [
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Tileset.tsx",
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Map.tmx",
+        "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/monochrome_tilemap_transparent_packed..tsx",
+        "Map.tmx",
+        "monochrome_tilemap_transparent_packed..tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
