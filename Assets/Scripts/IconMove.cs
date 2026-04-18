@@ -5,8 +5,15 @@ public class IconMove : MonoBehaviour
     public float moveAmount = 0.5f;
     public float turnAmount = 360f;
 
+    void Start()
+    {
+        // Ensure default facing is right (0 degrees)
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+    }
+
     public void MoveForward()
     {
+        // Moves in whatever direction the icon is currently facing
         transform.position += transform.right * moveAmount;
     }
 
