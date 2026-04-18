@@ -1,15 +1,34 @@
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class CameraDisplay : MonoBehaviour
 {
     public Sprite Screen;
-    public Sprite Image;
+    public Sprite expanse1;
+    public Sprite cliff;
+    public Sprite wall;
+
     float timer;
+    public GameObject collider1;
+    public GameObject collider2;
 
     public void ShowImage()
     {
         timer = 0;
-        this.GetComponent<SpriteRenderer>().sprite = Image;
+
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = wall;
+        }
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = cliff;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().sprite = expanse1;
+        }
+        
     }
 
     void Update()

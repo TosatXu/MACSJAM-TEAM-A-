@@ -4,6 +4,8 @@ public class IconMove : MonoBehaviour
 {
     public float moveAmount = 0.5f;
     public float turnAmount = 360f;
+    public GameObject collider1;
+    public GameObject collider2;
 
     void Start()
     {
@@ -14,7 +16,10 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         // Moves in whatever direction the icon is currently facing
-        transform.position += transform.right * moveAmount;
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
+        {
+            transform.position += transform.right * moveAmount;
+        }
     }
 
     public void TurnLeft()
