@@ -17,11 +17,13 @@ public class CameraDisplay : MonoBehaviour
     float timer;
     public GameObject collider1;
     public GameObject collider2;
+    public GameObject audioManager;
 
     public void takePicture()
     {
-        if (timer < 0) { 
-            Invoke("ShowImage", 0.2f);
+        if (timer < 0) {
+            audioManager.GetComponent<AudioManager>().PlayCamera();
+            Invoke("ShowImage", 0.3f);
         }
     }
 
@@ -32,6 +34,10 @@ public class CameraDisplay : MonoBehaviour
         if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
             this.GetComponent<SpriteRenderer>().sprite = wall;
+        }
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 12 || collider1.GetComponent<CollisionDetector>().collisionLayer == 12)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = dust;
         }
         else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 7)
         {
@@ -48,6 +54,10 @@ public class CameraDisplay : MonoBehaviour
         else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 9)
         {
             this.GetComponent<SpriteRenderer>().sprite = sarcophagus1;
+        }
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 9)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = Screen;
         }
         else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
         {

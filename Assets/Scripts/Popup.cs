@@ -9,7 +9,7 @@ public class Popup : MonoBehaviour
         transform.position += speed * Time.deltaTime;
         if (transform.position.y < -50)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 }
