@@ -5,6 +5,7 @@ public class Destroy : MonoBehaviour
 {
     public Boolean overlap;
     public GameObject text;
+    public GameObject monster;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -23,6 +24,7 @@ public class Destroy : MonoBehaviour
     {
         if (overlap)
         {
+            Instantiate(monster);
             Instantiate(text);
             this.gameObject.SetActive(false);
         }
