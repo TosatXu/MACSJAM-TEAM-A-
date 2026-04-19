@@ -5,6 +5,8 @@ public class CameraDisplay : MonoBehaviour
 {
     public Sprite Screen;
     public Sprite expanse1;
+    public Sprite expanse2;
+    public Sprite expanse3;
     public Sprite cliff;
     public Sprite wall;
     public Sprite item1;
@@ -69,7 +71,18 @@ public class CameraDisplay : MonoBehaviour
         }
         else
         {
-            this.GetComponent<SpriteRenderer>().sprite = expanse1;
+            if (collider1.transform.position.x < -4.5 && collider1.transform.position.y < -0.5)
+            {
+                this.GetComponent<SpriteRenderer>().sprite = expanse1;
+            }
+            else if (collider1.transform.position.y < 1)
+            {
+                this.GetComponent<SpriteRenderer>().sprite = expanse2;
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().sprite = expanse3;
+            }
         }
         
     }
