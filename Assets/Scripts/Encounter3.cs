@@ -6,6 +6,7 @@ public class Encounter3 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        AudioManager.instance.PlayMonsterRoar();
         if (collision.gameObject.layer == 11)
         {
             moveCounter++;
