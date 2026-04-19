@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip moveSound;
     public AudioClip cameraSound;
     public AudioClip shovelSound;
+    public AudioClip monsterRoar;
+    public AudioClip monsterRoar2;
 
     void Awake()
     {
@@ -46,5 +48,14 @@ public class AudioManager : MonoBehaviour
     public void PlayShovel()
     {
         sfxSource.PlayOneShot(shovelSound);
+    }
+    public void PlayMonsterRoar()
+    {
+        sfxSource.PlayOneShot(monsterRoar);
+    }
+
+    public void PlayMonsterRoar2()
+    {
+        sfxSource.PlayOneShot(monsterRoar2);
     }
 }

@@ -1936,6 +1936,8 @@ MonoBehaviour:
   moveSound: {fileID: 8300000, guid: 3268f0a3e11fd4febb4276baf0120223, type: 3}
   cameraSound: {fileID: 8300000, guid: abf659e1b1fce4db09a8ab8611278a38, type: 3}
   shovelSound: {fileID: 8300000, guid: 0fef3c5626a1949fca0b1d56b8060288, type: 3}
+  monsterRoar: {fileID: 8300000, guid: 253efbeb1775649dda899cddcd964534, type: 3}
+  monsterRoar2: {fileID: 8300000, guid: 41f10dcf2626d48f493187960dbb90b3, type: 3}
 --- !u!4 &890332516
 Transform:
   m_ObjectHideFlags: 0
