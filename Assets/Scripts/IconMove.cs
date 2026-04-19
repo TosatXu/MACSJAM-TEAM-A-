@@ -49,7 +49,7 @@ public class IconMove : MonoBehaviour
         if (timer < 0)
         {
             Invoke("TurnLeftReal", 0.1f);
-            timer = 0.3f;
+            timer = 0.5f;
             screenBlockManager.GetComponent<ScreenBlockManager>().block();
         }
     }
@@ -65,7 +65,7 @@ public class IconMove : MonoBehaviour
         if (timer < 0)
         {
             Invoke("TurnRightReal", 0.1f);
-            timer = 0.3f;
+            timer = 0.5f;
             screenBlockManager.GetComponent<ScreenBlockManager>().block();
         }
     }
