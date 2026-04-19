@@ -1558,7 +1558,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 3c3976ba7735346b1b5badd4efae1ca3, type: 3}
+  m_Resource: {fileID: 8300000, guid: e695df9cac97e4af2bd87f0608766786, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicSource: {fileID: 890332514}
   sfxSource: {fileID: 890332513}
-  backgroundMusic: {fileID: 8300000, guid: 3c3976ba7735346b1b5badd4efae1ca3, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: e695df9cac97e4af2bd87f0608766786, type: 3}
   moveSound: {fileID: 8300000, guid: 3268f0a3e11fd4febb4276baf0120223, type: 3}
   cameraSound: {fileID: 8300000, guid: abf659e1b1fce4db09a8ab8611278a38, type: 3}
   shovelSound: {fileID: 8300000, guid: 0fef3c5626a1949fca0b1d56b8060288, type: 3}
