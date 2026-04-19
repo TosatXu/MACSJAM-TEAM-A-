@@ -15,16 +15,19 @@ public class IconMove : MonoBehaviour
     {
         // Moves in whatever direction the icon is currently facing
         transform.position += transform.right * moveAmount;
+        AudioManager.instance.PlayMove();
     }
 
     public void TurnLeft()
     {
         transform.Rotate(0f, 0f, turnAmount);
+        AudioManager.instance.PlayMove();
     }
 
     public void TurnRight()
     {
         transform.Rotate(0f, 0f, -turnAmount);
+        AudioManager.instance.PlayMove();
     }
 }
 
