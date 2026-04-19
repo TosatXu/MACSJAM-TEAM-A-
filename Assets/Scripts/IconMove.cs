@@ -18,7 +18,13 @@ public class IconMove : MonoBehaviour
         // Moves in whatever direction the icon is currently facing
         if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
         {
-            transform.position += transform.right * moveAmount;
+            var pos = transform.position;
+            pos += transform.right * moveAmount;
+
+            pos.x = Mathf.Clamp(pos.x, -7.26f, 0f);
+            pos.y = Mathf.Clamp(pos.y, -3f, -4.25f);
+
+            transform.position = pos;
         }
     }
 
