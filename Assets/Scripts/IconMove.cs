@@ -16,6 +16,9 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         if (timer < 0)
+        AudioManager.instance.PlayMove();
+        // Moves in whatever direction the icon is currently facing
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
         {
             Invoke("MoveForwardReal", 0.1f);
             timer = 0.5f;
@@ -48,6 +51,7 @@ public class IconMove : MonoBehaviour
 
     void TurnLeftReal ()
     {
+        AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, turnAmount);
     }
 
@@ -62,6 +66,7 @@ public class IconMove : MonoBehaviour
 
     void TurnRightReal ()
     {
+        AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, -turnAmount);
     }
 
