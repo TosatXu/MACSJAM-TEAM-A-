@@ -15,6 +15,7 @@ public class IconMove : MonoBehaviour
 
     public void MoveForward()
     {
+        AudioManager.instance.PlayMove();
         // Moves in whatever direction the icon is currently facing
         if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
         {
@@ -30,11 +31,13 @@ public class IconMove : MonoBehaviour
 
     public void TurnLeft()
     {
+        AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, turnAmount);
     }
 
     public void TurnRight()
     {
+        AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, -turnAmount);
     }
 }
