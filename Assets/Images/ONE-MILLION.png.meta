@@ -1,10 +1,37 @@
 fileFormatVersion: 2
-guid: 78b047f86988c4048bbdfb0b8f4e9dae
+guid: 24221883b2cd26a4e81dd95f41b78edb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6361530968996990283
-    second: StraightArrow_0
+      213: 7319563163473449138
+    second: ONE-MILLION_0
+  - first:
+      213: 9024560693300691786
+    second: ONE-MILLION_1
+  - first:
+      213: 3205712861075847853
+    second: ONE-MILLION_2
+  - first:
+      213: 9133797555943262484
+    second: ONE-MILLION_3
+  - first:
+      213: -10560051000012815
+    second: ONE-MILLION_4
+  - first:
+      213: 3402481252780926806
+    second: ONE-MILLION_5
+  - first:
+      213: 4208310719172027577
+    second: ONE-MILLION_6
+  - first:
+      213: 4566136657513593714
+    second: ONE-MILLION_7
+  - first:
+      213: 8542045905832564581
+    second: ONE-MILLION_8
+  - first:
+      213: 5349654064657763982
+    second: ONE-MILLION_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -53,7 +80,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -75,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +127,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StraightArrow_0
+      name: ONE-MILLION_9
       rect:
         serializedVersion: 2
-        x: 12
-        y: 12
-        width: 40
-        height: 40
+        x: 0
+        y: 5
+        width: 215
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b2b94dd94d47b7a0800000000000000
-      internalID: -6361530968996990283
+      spriteID: e8e8623370acd3a40800000000000000
+      internalID: 5349654064657763982
       vertices: []
       indices: 
       edges: []
@@ -125,7 +152,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6e579be2b59f1974dbd5723e5eec5a05
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +160,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      StraightArrow_0: -6361530968996990283
+      ONE-MILLION_0: 7319563163473449138
+      ONE-MILLION_1: 9024560693300691786
+      ONE-MILLION_2: 3205712861075847853
+      ONE-MILLION_3: 9133797555943262484
+      ONE-MILLION_4: -10560051000012815
+      ONE-MILLION_5: 3402481252780926806
+      ONE-MILLION_6: 4208310719172027577
+      ONE-MILLION_7: 4566136657513593714
+      ONE-MILLION_8: 8542045905832564581
+      ONE-MILLION_9: 5349654064657763982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

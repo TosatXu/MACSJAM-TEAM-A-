@@ -22,7 +22,7 @@ public class IconMove : MonoBehaviour
             pos += transform.right * moveAmount;
 
             pos.x = Mathf.Clamp(pos.x, -7.26f, 0f);
-            pos.y = Mathf.Clamp(pos.y, -3f, -4.25f);
+            pos.y = Mathf.Clamp(pos.y, -2.93f, 4.25f);
 
             transform.position = pos;
         }

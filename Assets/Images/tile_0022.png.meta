@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f8e87ce10c08cd4fa61f524d7f75d73
+guid: ebaaf785b0677af44872beab9825f632
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5516421446308641407
-    second: dither_it_Museum - 4_0
+      213: -8941519833378295907
+    second: tile_0022_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 600
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dither_it_Museum - 4_0
+      name: tile_0022_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1535
+        x: 2
+        y: 2
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1854d6dfbebb173b0800000000000000
-      internalID: -5516421446308641407
+      spriteID: d9f6063f51759e380800000000000000
+      internalID: -8941519833378295907
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dither_it_Museum - 4_0: -5516421446308641407
+      tile_0022_0: -8941519833378295907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
