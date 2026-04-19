@@ -9,6 +9,6 @@ public class button : MonoBehaviour
     public void CameraButton_clicked()
     {
         AudioManager.instance.PlayCamera();
-        screen.GetComponent<CameraDisplay>().ShowImage();
+        screen.GetComponent<CameraDisplay>().takePicture();
     }
 }

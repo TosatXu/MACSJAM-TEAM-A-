@@ -6,6 +6,7 @@ public class IconMove : MonoBehaviour
     public float turnAmount = 360f;
     public GameObject collider1;
     public GameObject collider2;
+    public GameObject screenBlockManager;
     float timer = 0;
     void Start()
     {
@@ -16,28 +17,31 @@ public class IconMove : MonoBehaviour
     public void MoveForward()
     {
         if (timer < 0)
-        AudioManager.instance.PlayMove();
-        // Moves in whatever direction the icon is currently facing
-        if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
         {
-            Invoke("MoveForwardReal", 0.1f);
-            timer = 0.5f;
+            AudioManager.instance.PlayMove();
+            // Moves in whatever direction the icon is currently facing
+            if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
+            {
+                Invoke("MoveForwardReal", 0.1f);
+                timer = 0.5f;
+                screenBlockManager.GetComponent<ScreenBlockManager>().block();
+            }
         }
     }
 
     void MoveForwardReal ()
     {
         // Moves in whatever direction the icon is currently facing
-                if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
-                {
-                    var pos = transform.position;
-                    pos += transform.right * moveAmount;
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer != 6)
+        {
+            var pos = transform.position;
+            pos += transform.right * moveAmount;
 
-                    pos.x = Mathf.Clamp(pos.x, -7.26f, 0f);
-                    pos.y = Mathf.Clamp(pos.y, -2.93f, 4.25f);
+            pos.x = Mathf.Clamp(pos.x, -7.26f, 0f);
+            pos.y = Mathf.Clamp(pos.y, -2.93f, 4.25f);
 
-                    transform.position = pos;
-                }
+            transform.position = pos;
+        }
     }
 
     public void TurnLeft()
@@ -46,6 +50,7 @@ public class IconMove : MonoBehaviour
         {
             Invoke("TurnLeftReal", 0.1f);
             timer = 0.3f;
+            screenBlockManager.GetComponent<ScreenBlockManager>().block();
         }
     }
 
@@ -61,6 +66,7 @@ public class IconMove : MonoBehaviour
         {
             Invoke("TurnRightReal", 0.1f);
             timer = 0.3f;
+            screenBlockManager.GetComponent<ScreenBlockManager>().block();
         }
     }
 

@@ -18,9 +18,16 @@ public class CameraDisplay : MonoBehaviour
     public GameObject collider1;
     public GameObject collider2;
 
+    public void takePicture()
+    {
+        if (timer < 0) { 
+            Invoke("ShowImage", 0.2f);
+        }
+    }
+
     public void ShowImage()
     {
-        timer = 0;
+        timer = 2.5f;
 
         if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
@@ -59,8 +66,8 @@ public class CameraDisplay : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-        if(timer > 2)
+        timer -= Time.deltaTime;
+        if(timer < 0.5f)
         {
             this.GetComponent<SpriteRenderer>().sprite = Screen;
         }
