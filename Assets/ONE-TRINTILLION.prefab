@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2464479907432716255}
   - component: {fileID: 5289583951556850704}
+  - component: {fileID: -6837480379380337867}
   m_Layer: 0
   m_Name: ONE-TRINTILLION
   m_TagString: Untagged
@@ -91,3 +92,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-6837480379380337867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653034316238094824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efb52bda1b30e0428f857a9ecdee989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Popup
+  speed: {x: 0, y: 2, z: 0}
