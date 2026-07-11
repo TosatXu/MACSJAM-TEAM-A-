@@ -7,11 +7,14 @@ public class IconMove : MonoBehaviour
     public GameObject collider1;
     public GameObject collider2;
     public GameObject screenBlockManager;
-    float timer = 0;
+    public float timer = 0;
+    public int direction;
+
     void Start()
     {
         // Ensure default facing is right (0 degrees)
         transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        direction = 0;
     }
 
     public void MoveForward()
@@ -58,6 +61,8 @@ public class IconMove : MonoBehaviour
     {
         AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, turnAmount);
+        direction++;
+        direction = direction % 4;
     }
 
     public void TurnRight()
@@ -74,6 +79,15 @@ public class IconMove : MonoBehaviour
     {
         AudioManager.instance.PlayMove();
         transform.Rotate(0f, 0f, -turnAmount);
+        if (direction == 0)
+        {
+            direction = 3;
+        }
+        else
+        {
+            direction--;
+        }
+        direction = direction % 4;
     }
 
     private void Update()
