@@ -10,15 +10,15 @@
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Map.tmx": {
-            "scale": 2,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 127.75,
-                "y": 127.75
+                "x": 359,
+                "y": 445.5
             }
         },
         "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/Tileset.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 1.5,
             "scaleInEditor": 1
         },
         "C:/Users/zihan/OneDrive/Desktop/Uni/Year 2/COMP2150/MACSJAM-TEAM-A-/Assets/monochrome_tilemap_transparent_packed..tsx": {
