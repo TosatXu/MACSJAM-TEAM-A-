@@ -9,6 +9,8 @@ public class IconMove : MonoBehaviour
     public GameObject screenBlockManager;
     public float timer = 0;
     public int direction;
+    public GameObject marker;
+    public GameObject map;
 
     void Start()
     {
@@ -93,6 +95,18 @@ public class IconMove : MonoBehaviour
     private void Update()
     {
         timer -= Time.deltaTime;
+    }
+
+    public void placeMarker ()
+    {
+        if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
+        {
+            Instantiate(marker, collider1.transform.position, collider1.transform.localRotation, map.transform);
+        }
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
+        {
+            Instantiate(marker, collider2.transform.position, collider2.transform.localRotation, map.transform);
+        }
     }
 }
 

@@ -20,6 +20,7 @@ public class CameraDisplay : MonoBehaviour
     public GameObject collider1;
     public GameObject collider2;
     public GameObject audioManager;
+    public GameObject rover;
 
     public void takePicture()
     {
@@ -31,7 +32,7 @@ public class CameraDisplay : MonoBehaviour
 
     public void ShowImage()
     {
-        timer = 2.5f;
+        timer = 2f;
 
         if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
@@ -84,6 +85,7 @@ public class CameraDisplay : MonoBehaviour
                 this.GetComponent<SpriteRenderer>().sprite = expanse3;
             }
         }
+        rover.GetComponent<IconMove>().placeMarker();
         
     }
 
