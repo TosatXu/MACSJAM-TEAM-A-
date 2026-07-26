@@ -4,18 +4,22 @@ public class Encounter3 : MonoBehaviour
 {
     int moveCounter = 0;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Start()
+    {
+        moveDown();
+    }
+
+    private void moveDown ()
     {
         AudioManager.instance.PlayMonsterRoar();
-        if (collision.gameObject.layer == 11)
+        moveCounter++;
+        if (moveCounter > 10)
         {
-            moveCounter++;
-            if (moveCounter > 4)
-            {
-                Destroy(this.gameObject);
-            }
-            
-            transform.position += transform.up * -0.96f;
+            Destroy(this.gameObject);
         }
+            
+        transform.position += transform.up * -0.48f;
+
+        Invoke("moveDown", 0.3f);
     }
 }

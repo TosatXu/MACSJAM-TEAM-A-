@@ -13,7 +13,7 @@ public class CameraDisplay : MonoBehaviour
     public Sprite item2;
     public Sprite sarcophagus1;
     public Sprite sarcophagus2;
-    public Sprite mushroom;
+    public Sprite desert;
     public Sprite dust;
 
     float timer;
@@ -52,7 +52,7 @@ public class CameraDisplay : MonoBehaviour
         }
         else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 8)
         {
-            this.GetComponent<SpriteRenderer>().sprite = mushroom;
+            this.GetComponent<SpriteRenderer>().sprite = desert;
         }
         else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 9)
         {

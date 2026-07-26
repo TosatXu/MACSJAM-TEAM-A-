@@ -3594,6 +3594,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9960785
       objectReference: {fileID: 0}
+    - target: {fileID: -5348606900005949421, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.174
+      objectReference: {fileID: 0}
     - target: {fileID: -4384897335405516464, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_Name
       value: Map
@@ -3646,6 +3650,10 @@ PrefabInstance:
       propertyPath: m_MaskInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1833505697778610178, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3726068692020774850, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -3665,6 +3673,10 @@ PrefabInstance:
     - target: {fileID: 5303064656958688262, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742899970897784521, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3691,7 +3703,82 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3862944663295110551, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1487483999}
+    - targetCorrespondingSourceObject: {fileID: 6742899970897784521, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1490733358}
   m_SourcePrefab: {fileID: -2695619058785784247, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+--- !u!1 &1490733357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6742899970897784521, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
+  m_PrefabInstance: {fileID: 1490733356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1490733358
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490733357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.2042165, y: -3.5547183}
+      - {x: 4.1861954, y: -3.7028475}
+      - {x: 2.7568398, y: -3.7179868}
+      - {x: 2.7601004, y: -4.1100626}
+      - {x: 2.9070005, y: -4.123585}
+      - {x: 2.9142992, y: -4.9143815}
+      - {x: 3.0627406, y: -4.9218855}
+      - {x: 3.063185, y: -5.0867205}
+      - {x: 3.2251556, y: -5.0894966}
+      - {x: 3.2322178, y: -5.2564206}
+      - {x: 3.962488, y: -5.2546053}
+      - {x: 3.9730682, y: -4.9234605}
+      - {x: 4.1290064, y: -4.9243927}
+      - {x: 4.130444, y: -4.5978284}
+      - {x: 4.289695, y: -4.605165}
+      - {x: 4.295645, y: -4.2867093}
+      - {x: 4.4551888, y: -4.28634}
+      - {x: 4.4525123, y: -4.180807}
+      - {x: 4.2949743, y: -4.180523}
+      - {x: 4.2903767, y: -3.5586329}
+  m_UseDelaunayMesh: 1
 --- !u!1 &1496147140
 GameObject:
   m_ObjectHideFlags: 0
@@ -4792,7 +4879,7 @@ MonoBehaviour:
   item2: {fileID: -618921843889125854, guid: f826bbeeb550f36439eb272e0e085a36, type: 3}
   sarcophagus1: {fileID: 8448178613689163484, guid: eeb101f0e66a01a438752ae23fdd0153, type: 3}
   sarcophagus2: {fileID: -6076120217435835584, guid: 9d6a1ae3aaf454c499517a42dd898bcf, type: 3}
-  mushroom: {fileID: 0}
+  desert: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
   dust: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
   collider1: {fileID: 311009422}
   collider2: {fileID: 2051082559}
