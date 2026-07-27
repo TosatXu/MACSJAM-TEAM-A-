@@ -20,6 +20,6 @@ public class Encounter3 : MonoBehaviour
             
         transform.position += transform.up * -0.48f;
 
-        Invoke("moveDown", 0.3f);
+        Invoke("moveDown", 0.4f);
     }
 }
