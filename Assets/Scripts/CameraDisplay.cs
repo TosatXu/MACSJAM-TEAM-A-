@@ -66,17 +66,13 @@ public class CameraDisplay : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = cliff;
         }
-        else if (collider1.transform.position.x > 0 || collider1.transform.position.x < -7.5 || collider1.transform.position.y > 4.5 || collider1.transform.position.y < -3.25)
-        {
-            this.GetComponent<SpriteRenderer>().sprite = dust;
-        }
         else
         {
-            if (collider1.transform.position.x < -4.5 && collider1.transform.position.y < -0.5)
+            if (collider2.GetComponent<CollisionDetector>().collisionLayer == 13)
             {
                 this.GetComponent<SpriteRenderer>().sprite = expanse1;
             }
-            else if (collider1.transform.position.y < 1)
+            else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 14)
             {
                 this.GetComponent<SpriteRenderer>().sprite = expanse2;
             }
