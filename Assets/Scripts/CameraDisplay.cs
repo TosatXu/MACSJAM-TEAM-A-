@@ -15,6 +15,7 @@ public class CameraDisplay : MonoBehaviour
     public Sprite sarcophagus2;
     public Sprite desert;
     public Sprite dust;
+    public Sprite canyon;
 
     float timer;
     public GameObject collider1;
@@ -65,6 +66,10 @@ public class CameraDisplay : MonoBehaviour
         else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
             this.GetComponent<SpriteRenderer>().sprite = cliff;
+        }
+        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 16)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = canyon;
         }
         else
         {

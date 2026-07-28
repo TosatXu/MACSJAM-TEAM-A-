@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf139329caddb8e479c5489fcf815a7e
+guid: cdf8011328a72784780ef9235673378f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3481933649144834385
-    second: dither_it__Curiosity_Rover2_0
+      213: -5716758078179618323
+    second: Canyon2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,9 +51,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dither_it__Curiosity_Rover2_0
+      name: Canyon2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 658
-        height: 432
+        width: 800
+        height: 707
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa61e3f4bcfadafc0800000000000000
-      internalID: -3481933649144834385
+      spriteID: de1524b01def9a0b0800000000000000
+      internalID: -5716758078179618323
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8aa90d7109354664caf925847bac1a1d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dither_it__Curiosity_Rover2_0: -3481933649144834385
+      Canyon2_0: -5716758078179618323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
