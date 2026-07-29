@@ -1,0 +1,7 @@
+Intro:
+An unending dust storm ravages the terraformed ecosystems, the colonies buried under its filth. Lone remains of once-human colonists scatter the landscape, moulded by the storm, fusing into stone.
+
+You are a BioRover - an exploration rover with semi-organic computing. You no longer remember your birth; your makers skimmed on your memory drive. 
+
+You receive a signal from within the dunes. Its texture somehow feels warm. After all these eons, you wonder if even you can feel abandoned. You must find the source of this signal.
+
