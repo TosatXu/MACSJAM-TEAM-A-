@@ -24,7 +24,8 @@ public class Destroy : MonoBehaviour
     {
         if (overlap)
         {
-            Instantiate(monster);
+            Instantiate(monster, this.transform);
+            transform.DetachChildren();
             Instantiate(text);
             this.gameObject.SetActive(false);
         }

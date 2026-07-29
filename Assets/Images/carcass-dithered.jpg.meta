@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: 80770999c0b18c44cad0c72f6c72f02f
+guid: eaf2eb0dacc648d4d96132071225aa1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1268579276656779740
-    second: Encounter3_0
-  - first:
-      213: 1489446095089505117
-    second: Encounter3_1
-  - first:
-      213: -6899756613911042637
-    second: Encounter3_2
-  - first:
-      213: -4379723906703258614
-    second: Encounter3_3
-  - first:
-      213: 576513123763897246
-    second: Encounter3_4
-  - first:
-      213: -172715768700419007
-    second: Encounter3_5
-  - first:
-      213: 3846841822692049408
-    second: Encounter3_6
-  - first:
-      213: 4946343171897874751
-    second: Encounter3_7
-  - first:
-      213: -2878132070019723200
-    second: Encounter3_8
+      213: 1105460204941964908
+    second: carcass-dithered_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -125,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Encounter3_8
+      name: carcass-dithered_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 144
+        width: 800
+        height: 600
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04090dd9122de08d0800000000000000
-      internalID: -2878132070019723200
+      spriteID: c6675ec0332675f00800000000000000
+      internalID: 1105460204941964908
       vertices: []
       indices: 
       edges: []
@@ -162,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c38b19df16a7714e9ec1ea8accbce86
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,15 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Encounter3_0: 1268579276656779740
-      Encounter3_1: 1489446095089505117
-      Encounter3_2: -6899756613911042637
-      Encounter3_3: -4379723906703258614
-      Encounter3_4: 576513123763897246
-      Encounter3_5: -172715768700419007
-      Encounter3_6: 3846841822692049408
-      Encounter3_7: 4946343171897874751
-      Encounter3_8: -2878132070019723200
+      carcass-dithered_0: 1105460204941964908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

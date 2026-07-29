@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6539834155431006725}
   - component: {fileID: 7583452334272950382}
-  - component: {fileID: -7602610306504570412}
   - component: {fileID: 6108528464942598356}
   - component: {fileID: -7139598808306208377}
+  - component: {fileID: 6950655209955995614}
   m_Layer: 12
   m_Name: Encounter2
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1312491533174367668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.502, y: 0.43, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,18 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &-7602610306504570412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312491533174367668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a35e7fbf78913419fd52d865d92521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!61 &6108528464942598356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,3 +167,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6950655209955995614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312491533174367668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb711507208eed4482d86900be2fb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Encounter3
+  direction: {x: 0, y: 1, z: 0}
+  moveTotal: 8
+  moveTimeIncrement: 1
