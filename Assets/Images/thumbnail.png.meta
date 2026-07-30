@@ -1,88 +1,10 @@
 fileFormatVersion: 2
-guid: a6950c7507fb4434890054549254a28c
+guid: adbd0c63f8d73fb46b7761997bbbe7ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7352339073622421304
-    second: Title_0
-  - first:
-      213: 578584420991164872
-    second: Title_1
-  - first:
-      213: -2586058674264470982
-    second: Title_2
-  - first:
-      213: -7455755055849233376
-    second: Title_3
-  - first:
-      213: -2920429353955323833
-    second: Title_4
-  - first:
-      213: -8183731707024800371
-    second: Title_5
-  - first:
-      213: -2698452132489872219
-    second: Title_6
-  - first:
-      213: -4950144012914721142
-    second: Title_7
-  - first:
-      213: 3188867983059848843
-    second: Title_8
-  - first:
-      213: 7852301220439587256
-    second: Title_9
-  - first:
-      213: 1883129450418887258
-    second: Title_10
-  - first:
-      213: 831226060202523121
-    second: Title_11
-  - first:
-      213: -5611296808718163769
-    second: Title_12
-  - first:
-      213: -2980618429333584377
-    second: Title_13
-  - first:
-      213: -6489994065110802945
-    second: Title_14
-  - first:
-      213: 1185279196486844169
-    second: Title_15
-  - first:
-      213: -8938237866032844517
-    second: Title_16
-  - first:
-      213: 7549936563529260177
-    second: Title_17
-  - first:
-      213: -3912535757841368806
-    second: Title_18
-  - first:
-      213: 7986414349913673620
-    second: Title_19
-  - first:
-      213: -5473989836383813982
-    second: Title_20
-  - first:
-      213: -3945733060299393030
-    second: Title_21
-  - first:
-      213: -8649738602703228084
-    second: Title_22
-  - first:
-      213: -5348464669708909733
-    second: Title_23
-  - first:
-      213: -4699841759642437723
-    second: Title_24
-  - first:
-      213: -9086561684665523175
-    second: Title_25
-  - first:
-      213: 1882604650658863205
-    second: Title_26
+      213: 7366393777426302075
+    second: thumbnail_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -179,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -191,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Title_0
+      name: thumbnail_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 750
-        height: 195
+        height: 750
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c0d280219e37f990800000000000000
-      internalID: -7352339073622421304
+      spriteID: b74842b9c10ba3660800000000000000
+      internalID: 7366393777426302075
       vertices: []
       indices: 
       edges: []
@@ -216,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ad21f31ceb56aea499b93e96cf9a2240
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -226,33 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Title_0: -7352339073622421304
-      Title_1: 578584420991164872
-      Title_10: 1883129450418887258
-      Title_11: 831226060202523121
-      Title_12: -5611296808718163769
-      Title_13: -2980618429333584377
-      Title_14: -6489994065110802945
-      Title_15: 1185279196486844169
-      Title_16: -8938237866032844517
-      Title_17: 7549936563529260177
-      Title_18: -3912535757841368806
-      Title_19: 7986414349913673620
-      Title_2: -2586058674264470982
-      Title_20: -5473989836383813982
-      Title_21: -3945733060299393030
-      Title_22: -8649738602703228084
-      Title_23: -5348464669708909733
-      Title_24: -4699841759642437723
-      Title_25: -9086561684665523175
-      Title_26: 1882604650658863205
-      Title_3: -7455755055849233376
-      Title_4: -2920429353955323833
-      Title_5: -8183731707024800371
-      Title_6: -2698452132489872219
-      Title_7: -4950144012914721142
-      Title_8: 3188867983059848843
-      Title_9: 7852301220439587256
+      thumbnail_0: 7366393777426302075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
