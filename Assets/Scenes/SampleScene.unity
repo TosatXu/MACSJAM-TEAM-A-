@@ -723,7 +723,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7725312423788236791, guid: 01fb072f4623fa24185342adc8a84443, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5127,7 +5127,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 1.19}
+  m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5153,7 +5153,7 @@ MonoBehaviour:
   item1: {fileID: -618921843889125854, guid: ee0548252bff913439a81bdf7315987e, type: 3}
   item2: {fileID: -618921843889125854, guid: f826bbeeb550f36439eb272e0e085a36, type: 3}
   sarcophagus1: {fileID: 8448178613689163484, guid: eeb101f0e66a01a438752ae23fdd0153, type: 3}
-  sarcophagus2: {fileID: -6076120217435835584, guid: 9d6a1ae3aaf454c499517a42dd898bcf, type: 3}
+  sarcophagus2: {fileID: -122900457824720496, guid: ae792e6f979746f448eeba589c5ce9d9, type: 3}
   desert: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
   dust: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
   canyon: {fileID: -2463653405192164058, guid: e489cc41f41a95d478af36101aff17ea, type: 3}

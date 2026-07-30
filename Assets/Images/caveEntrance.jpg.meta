@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e143c21f12f4a634fb9a4d4280490098
+guid: b928a22efb618ac409e9c079b71a6085
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5716925409927067320
-    second: PerseveranceHills-dithered (dark)_0
+      213: 1637522544895269989
+    second: caveEntrance_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PerseveranceHills-dithered (dark)_0
+      name: caveEntrance_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 44
-        width: 780
-        height: 538
+        x: 0
+        y: 69
+        width: 800
+        height: 531
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84984e511a669a0b0800000000000000
-      internalID: -5716925409927067320
+      spriteID: 56c1d202416a9b610800000000000000
+      internalID: 1637522544895269989
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 867aa386612ddcd40a60d46dedd99e2c
+    spriteID: 1f1766f749ffd824082ff3e1dc612d6d
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PerseveranceHills-dithered (dark)_0: -5716925409927067320
+      caveEntrance_0: 1637522544895269989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
