@@ -103,7 +103,7 @@ public class IconMove : MonoBehaviour
         {
             Instantiate(marker, collider1.transform.position, collider1.transform.localRotation, map.transform);
         }
-        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6 && collider1.GetComponent<CollisionDetector>().collisionLayer != 8)
         {
             Instantiate(marker, collider2.transform.position, collider2.transform.localRotation, map.transform);
         }
