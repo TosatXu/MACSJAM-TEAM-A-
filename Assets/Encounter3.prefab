@@ -180,5 +180,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Encounter3
   direction: {x: 0, y: -1, z: 0}
-  moveTotal: 12
-  moveTimeIncrement: 0.5
+  moveTotal: 20
+  moveTimeIncrement: 0.4
