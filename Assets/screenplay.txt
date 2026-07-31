@@ -1,7 +1,20 @@
 Intro:
-An unending dust storm ravages the terraformed ecosystems, the colonies buried under its filth. Lone remains of once-human colonists scatter the landscape, moulded by the storm, fusing into stone.
+An unending dust storm ravages the terraformed ecosystems, the colonies lay derelict under its filth. Lone remains of once-human colonists scatter the landscape, moulded by the storm, fusing into stone.
 
-You are a BioRover - an exploration rover with semi-organic computing. You no longer remember your birth; your makers skimmed on your memory drive. 
+You are a BioRover - a cybernetic Mars exploration rover with semi-organic computing. You no longer remember your birth; your makers skimmed on your memory drive. 
 
-You receive a signal from within the dunes. Its texture somehow feels warm. After all these eons, you wonder if even you can feel abandoned. You must find the source of this signal.
+You receive a signal from within the dunes. You can't quite make out its contents, but its texture somehow feels familiar, embracing you in its warmth. After all these eons, you wonder if even you can feel abandoned. You must find the source of this signal.
 
+
+Carcass:
+A carcass lays in the dust. You're not sure what it used to be, but it is not the source of the signal.
+
+
+Item in dust:
+Your detect a metallic object beneath your wheels. Just scrap.
+
+
+Ending:
+A sudden gale rips sand from the desert under your chassis, and with it, a mysterious device.
+
+The Device:
