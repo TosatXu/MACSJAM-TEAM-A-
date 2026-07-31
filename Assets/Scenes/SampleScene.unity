@@ -5970,7 +5970,7 @@ MonoBehaviour:
   text: {fileID: 300921990431032872, guid: 79140139036467542993dce106f7c635, type: 3}
   monster: {fileID: 1312491533174367668, guid: 2e2993941b0194344bbecd0730993ac4, type: 3}
   map: {fileID: 31986499}
-  spawnPoint: {x: 0, y: 0, z: 0}
+  spawnPoint: {x: 0, y: -0.48, z: 0}
 --- !u!1 &1988002230
 GameObject:
   m_ObjectHideFlags: 0
