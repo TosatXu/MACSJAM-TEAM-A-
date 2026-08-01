@@ -7,10 +7,12 @@ public class CameraDisplay : MonoBehaviour
     public Sprite expanse1;
     public Sprite expanse2;
     public Sprite expanse3;
+    public Sprite expanseFinal;
     public Sprite cliff;
     public Sprite wall;
     public Sprite item1;
     public Sprite item2;
+    public Sprite carcass;
     public Sprite sarcophagus1;
     public Sprite sarcophagus2;
     public Sprite desert;
@@ -53,6 +55,10 @@ public class CameraDisplay : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = item2;
         }
+        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 18)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = carcass;
+        }
         else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 8)
         {
             this.GetComponent<SpriteRenderer>().sprite = desert;
@@ -83,17 +89,21 @@ public class CameraDisplay : MonoBehaviour
         }
         else
         {
-            if (collider2.GetComponent<CollisionDetector>().collisionLayer == 13)
+            if (collider1.GetComponent<CollisionDetector>().collisionLayer == 13 || collider2.GetComponent<CollisionDetector>().collisionLayer == 13)
             {
                 this.GetComponent<SpriteRenderer>().sprite = expanse1;
             }
-            else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 14)
+            else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 14 || collider2.GetComponent<CollisionDetector>().collisionLayer == 14)
             {
                 this.GetComponent<SpriteRenderer>().sprite = expanse2;
             }
-            else
+            else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 15 || collider2.GetComponent<CollisionDetector>().collisionLayer == 15)
             {
                 this.GetComponent<SpriteRenderer>().sprite = expanse3;
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().sprite = expanseFinal;
             }
         }
         rover.GetComponent<IconMove>().placeMarker();

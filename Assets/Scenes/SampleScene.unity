@@ -365,6 +365,162 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapMove
   moveAmount: 0.48
   rover: {fileID: 1013705693}
+--- !u!1 &124904270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124904271}
+  - component: {fileID: 124904274}
+  - component: {fileID: 124904273}
+  - component: {fileID: 124904272}
+  m_Layer: 18
+  m_Name: Fragment (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124904271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124904270}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.791, y: -7.915, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3.7008383}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1435179664}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &124904272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124904270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0aa46a7f63e6c47bda049e026e7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  overlap: 0
+  text: {fileID: 0}
+  monster: {fileID: 0}
+  map: {fileID: 31986499}
+  spawnPoint: {x: 0, y: 0, z: 0}
+--- !u!61 &124904273
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124904270}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.12, y: 0.12}
+    newSize: {x: 0.08, y: 0.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.08, y: 0.08}
+  m_EdgeRadius: 0
+--- !u!212 &124904274
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124904270}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -8941519833378295907, guid: 434108deadf77c2448f082029fff6c47, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.08, y: 0.08}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &254023086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,7 +3219,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 6.1033344, y: -3.3916123}
+    - - {x: 5.934801, y: -3.5296662}
       - {x: 5.3117948, y: -3.8768988}
       - {x: 4.982054, y: -4.3638616}
       - {x: 4.9842243, y: -4.5090322}
@@ -3075,7 +3231,7 @@ PolygonCollider2D:
       - {x: 4.5008974, y: -5.4116282}
       - {x: 4.780136, y: -6.0967298}
       - {x: 6.222651, y: -6.090437}
-      - {x: 6.231167, y: -3.388072}
+      - {x: 6.227581, y: -3.5332975}
   m_UseDelaunayMesh: 1
 --- !u!1 &1368240447
 GameObject:
@@ -3462,6 +3618,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2103933034}
+  - {fileID: 124904271}
   - {fileID: 1595313331}
   - {fileID: 1884578577}
   m_Father: {fileID: 31986504}
@@ -3704,8 +3861,8 @@ PolygonCollider2D:
     - - {x: -0.0052583218, y: 0.15671372}
       - {x: 0.0036081076, y: 0.027398944}
       - {x: 0.5048497, y: 0.023501754}
-      - {x: 0.5053905, y: -0.1333096}
-      - {x: 0.6130657, y: -0.13321805}
+      - {x: 0.53126705, y: 0.030882716}
+      - {x: 0.56777096, y: 0.030406833}
       - {x: 0.6165328, y: 0.023565173}
       - {x: 0.99364924, y: 0.025359511}
       - {x: 1.0046477, y: -0.44034934}
@@ -4302,34 +4459,30 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 4.2042165, y: -3.5547183}
-      - {x: 4.5124774, y: -2.367667}
-      - {x: 4.923178, y: -2.3615754}
-      - {x: 4.92263, y: -1.6366428}
-      - {x: 4.776387, y: -1.6257181}
-      - {x: 4.767196, y: -1.4607155}
-      - {x: 4.0422287, y: -1.4579959}
-      - {x: 2.4504447, y: -2.1262047}
-      - {x: 2.4285347, y: -2.757507}
-      - {x: 2.2668412, y: -2.7648885}
-      - {x: 2.2814255, y: -3.3095322}
-      - {x: 2.7601004, y: -4.1100626}
-      - {x: 2.9070005, y: -4.123585}
-      - {x: 2.9142992, y: -4.9143815}
-      - {x: 3.0627406, y: -4.9218855}
-      - {x: 3.063185, y: -5.0867205}
-      - {x: 3.2251556, y: -5.0894966}
-      - {x: 3.2322178, y: -5.2564206}
-      - {x: 3.962488, y: -5.2546053}
-      - {x: 3.9730682, y: -4.9234605}
-      - {x: 4.1290064, y: -4.9243927}
-      - {x: 4.130444, y: -4.5978284}
-      - {x: 4.289695, y: -4.605165}
-      - {x: 4.295645, y: -4.2867093}
-      - {x: 4.4551888, y: -4.28634}
-      - {x: 4.4525123, y: -4.180807}
-      - {x: 4.2949743, y: -4.180523}
-      - {x: 4.2903767, y: -3.5586329}
+    - - {x: 3.7356138, y: -3.5553768}
+      - {x: 3.7142112, y: -3.7056634}
+      - {x: 3.5488842, y: -3.7084877}
+      - {x: 3.5378997, y: -3.8674507}
+      - {x: 3.3976243, y: -3.8655767}
+      - {x: 3.394302, y: -4.0269194}
+      - {x: 3.2241123, y: -4.0239353}
+      - {x: 3.2255216, y: -4.19275}
+      - {x: 2.9131777, y: -4.184822}
+      - {x: 2.9089594, y: -4.9086466}
+      - {x: 3.0648801, y: -4.9177017}
+      - {x: 3.0653374, y: -5.088576}
+      - {x: 3.2262666, y: -5.090734}
+      - {x: 3.2298713, y: -5.2399516}
+      - {x: 3.9645376, y: -5.233653}
+      - {x: 3.9768953, y: -4.9167595}
+      - {x: 4.134721, y: -4.9189725}
+      - {x: 4.1363144, y: -4.5972595}
+      - {x: 4.2932153, y: -4.603982}
+      - {x: 4.296946, y: -4.2749176}
+      - {x: 4.4395123, y: -4.256796}
+      - {x: 4.457131, y: -4.1886907}
+      - {x: 4.2891808, y: -4.192715}
+      - {x: 4.2789903, y: -3.5518045}
   m_UseDelaunayMesh: 1
 --- !u!1 &1490733359 stripped
 GameObject:
@@ -4439,12 +4592,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.871448, y: -2.9008937}
-      - {x: 1.4880109, y: -2.902514}
+    - - {x: 1.8966024, y: -2.7457757}
+      - {x: 1.485216, y: -2.7459984}
       - {x: 1.4850519, y: -3.504563}
       - {x: 2.0279698, y: -3.4833498}
       - {x: 2.030724, y: -3.0768363}
-      - {x: 1.8567929, y: -3.0779037}
+      - {x: 1.8805497, y: -3.0737112}
   m_UseDelaunayMesh: 1
 --- !u!60 &1490733362
 PolygonCollider2D:
@@ -4492,8 +4645,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 5.0090885, y: -1.6395867}
-      - {x: 5.0018005, y: -2.1838622}
+    - - {x: 2.4365897, y: -2.1106062}
+      - {x: 2.2855859, y: -3.3354566}
+      - {x: 2.7534378, y: -4.132864}
+      - {x: 2.8333387, y: -4.133687}
+      - {x: 2.8424757, y: -3.965078}
+      - {x: 2.9846752, y: -3.960075}
+      - {x: 2.9954102, y: -3.8193579}
+      - {x: 3.1429658, y: -3.8082523}
+      - {x: 3.154876, y: -3.483479}
+      - {x: 4.1100874, y: -3.4743567}
+      - {x: 4.116254, y: -3.1758573}
+      - {x: 4.27869, y: -3.166547}
+      - {x: 4.284068, y: -2.8497822}
+      - {x: 4.440709, y: -2.8342013}
+      - {x: 4.446694, y: -2.3704727}
+      - {x: 4.9218516, y: -2.3676095}
+      - {x: 4.931423, y: -2.2009234}
+      - {x: 5.139361, y: -2.2071924}
+      - {x: 5.149824, y: -2.683441}
       - {x: 5.3008914, y: -2.994731}
       - {x: 5.80331, y: -3.3315353}
       - {x: 6.187768, y: -3.3233013}
@@ -5803,10 +5973,12 @@ MonoBehaviour:
   expanse1: {fileID: -2286668018638609285, guid: 999b23a878137c9449632d919e51e941, type: 3}
   expanse2: {fileID: -8519101629028359299, guid: 6a95a1c185d0bf947af63fe5ffd5df4c, type: 3}
   expanse3: {fileID: -647077617665418958, guid: 6c431c46267b98643934591fba3fc648, type: 3}
+  expanseFinal: {fileID: 0}
   cliff: {fileID: -3481933649144834385, guid: bf139329caddb8e479c5489fcf815a7e, type: 3}
   wall: {fileID: -1703383271984481490, guid: 6e3c847a534313841b31d1fbf926c111, type: 3}
   item1: {fileID: -618921843889125854, guid: ee0548252bff913439a81bdf7315987e, type: 3}
   item2: {fileID: -618921843889125854, guid: f826bbeeb550f36439eb272e0e085a36, type: 3}
+  carcass: {fileID: 1105460204941964908, guid: eaf2eb0dacc648d4d96132071225aa1b, type: 3}
   sarcophagus1: {fileID: -122900457824720496, guid: ae792e6f979746f448eeba589c5ce9d9, type: 3}
   sarcophagus2: {fileID: -122900457824720496, guid: ae792e6f979746f448eeba589c5ce9d9, type: 3}
   desert: {fileID: 1670660276820739667, guid: 2f1d10e270c7b514dbeaddff0f541959, type: 3}
@@ -6579,7 +6751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   overlap: 0
   text: {fileID: 8249672977930765075, guid: d47069c4275bec9438679398edae2b4d, type: 3}
-  monster: {fileID: 8086574641138097771, guid: 927c6273a98fbed43b88040aac3a529f, type: 3}
+  monster: {fileID: 0}
   map: {fileID: 31986499}
   spawnPoint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132688813

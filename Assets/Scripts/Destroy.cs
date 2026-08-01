@@ -26,9 +26,15 @@ public class Destroy : MonoBehaviour
     {
         if (overlap)
         {
-            Instantiate(monster, this.transform.position + spawnPoint, this.transform.rotation, map.transform);
+            if (monster != null)
+            {
+                Instantiate(monster, this.transform.position + spawnPoint, this.transform.rotation, map.transform);
+            }
+            if (text != null)
+            {
+                Instantiate(text);
+            }
             transform.DetachChildren();
-            Instantiate(text);
             this.gameObject.SetActive(false);
         }
     }
