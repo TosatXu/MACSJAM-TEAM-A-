@@ -1062,6 +1062,8 @@ GameObject:
   m_Component:
   - component: {fileID: 393497867}
   - component: {fileID: 393497868}
+  - component: {fileID: 393497870}
+  - component: {fileID: 393497869}
   m_Layer: 0
   m_Name: Signal
   m_TagString: Untagged
@@ -1078,7 +1080,7 @@ Transform:
   m_GameObject: {fileID: 393497866}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.27, y: -16.54, z: 0}
+  m_LocalPosition: {x: 11.273, y: -16.545, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1143,6 +1145,69 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!61 &393497869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393497866}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.000000014901161, y: -0.0011692103}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.12, y: 0.12}
+    newSize: {x: 0.12, y: 0.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.09194167, y: 0.09583855}
+  m_EdgeRadius: 0
+--- !u!114 &393497870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393497866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0aa46a7f63e6c47bda049e026e7101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroy
+  overlap: 0
+  text: {fileID: 0}
+  monster: {fileID: 9182494429994177673, guid: de81d307d3cb470479bca46e463aafae, type: 3}
+  map: {fileID: 31986499}
+  spawnPoint: {x: 0, y: -0.48, z: 0}
 --- !u!1 &479060468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1384,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 124904272}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: destroySelf
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 393497870}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
         m_MethodName: destroySelf
         m_Mode: 1
@@ -4197,8 +4274,12 @@ PolygonCollider2D:
       - {x: 2.9136097, y: -4.5083494}
       - {x: 2.9078653, y: -4.6686993}
       - {x: 2.590106, y: -4.668167}
-      - {x: 2.5838616, y: -4.8291492}
-      - {x: 0.44291997, y: -4.827567}
+      - {x: 2.5948918, y: -4.922906}
+      - {x: 4.99034, y: -4.9261007}
+      - {x: 5.000334, y: -9.798302}
+      - {x: 0.27714348, y: -9.799558}
+      - {x: 0.29770362, y: -4.944153}
+      - {x: 0.4483925, y: -4.9349413}
       - {x: 0.43381345, y: -3.9680402}
       - {x: 0.5869665, y: -3.9626157}
       - {x: 0.6027384, y: -3.804652}
@@ -4231,8 +4312,8 @@ PolygonCollider2D:
       - {x: 0.13135648, y: -0.8416791}
       - {x: 0.13483238, y: -0.01595807}
       - {x: 0.007877231, y: -0.016112566}
-      - {x: 0.010119438, y: -4.980088}
-      - {x: 5.127324, y: -4.9693365}
+      - {x: -0.053456068, y: -10.132155}
+      - {x: 5.3683243, y: -10.101255}
       - {x: 5.126816, y: 0.13993263}
   m_UseDelaunayMesh: 1
 --- !u!60 &1487483998
@@ -6293,7 +6374,7 @@ MonoBehaviour:
   expanse1: {fileID: -2286668018638609285, guid: 999b23a878137c9449632d919e51e941, type: 3}
   expanse2: {fileID: -8519101629028359299, guid: 6a95a1c185d0bf947af63fe5ffd5df4c, type: 3}
   expanse3: {fileID: -647077617665418958, guid: 6c431c46267b98643934591fba3fc648, type: 3}
-  expanseFinal: {fileID: 0}
+  expanseFinal: {fileID: -5716925409927067320, guid: e143c21f12f4a634fb9a4d4280490098, type: 3}
   cliff: {fileID: -3481933649144834385, guid: bf139329caddb8e479c5489fcf815a7e, type: 3}
   wall: {fileID: -1703383271984481490, guid: 6e3c847a534313841b31d1fbf926c111, type: 3}
   item1: {fileID: -618921843889125854, guid: ee0548252bff913439a81bdf7315987e, type: 3}

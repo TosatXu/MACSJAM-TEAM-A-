@@ -15,6 +15,6 @@ Your detect a metallic object beneath your wheels. Just scrap.
 
 
 Ending:
-A sudden gale rips sand from the desert under your chassis, and with it, a mysterious device.
+As you pick up a heavy metal device, a sudden gale rips it from your arms and carries it towards the south.
 
 The Device:
