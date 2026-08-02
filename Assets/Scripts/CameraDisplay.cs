@@ -20,6 +20,7 @@ public class CameraDisplay : MonoBehaviour
     public Sprite canyon;
     public Sprite tunnel;
     public Sprite cave;
+    public Destroy sarcophagus1Target;
 
     float timer;
     public GameObject collider1;
@@ -39,7 +40,32 @@ public class CameraDisplay : MonoBehaviour
     {
         timer = 2f;
 
-        if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
+        CollisionDetector frontDetector =
+        collider1.GetComponent<CollisionDetector>();
+
+        Destroy photographedItem = null;
+
+        if (frontDetector.collisionObject != null)
+        {
+            photographedItem =
+                frontDetector.collisionObject.GetComponentInParent<Destroy>();
+        }
+
+        if (sarcophagus1Target != null &&
+            photographedItem == sarcophagus1Target)
+        {
+            GetComponent<SpriteRenderer>().sprite = sarcophagus1;
+
+            sarcophagus1Target.TriggerFromPhoto();
+
+            frontDetector.collisionLayer = 0;
+            frontDetector.collisionObject = null;
+        }
+        else if (frontDetector.collisionLayer == 6)
+        {
+            GetComponent<SpriteRenderer>().sprite = wall;
+        }
+        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
             this.GetComponent<SpriteRenderer>().sprite = wall;
         }
@@ -63,10 +89,14 @@ public class CameraDisplay : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = desert;
         }
-        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 9)
+        else if (frontDetector.collisionLayer == 9)
         {
-            this.GetComponent<SpriteRenderer>().sprite = sarcophagus1;
+            GetComponent<SpriteRenderer>().sprite = sarcophagus2;
         }
+        // else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 9)
+        // {
+        //     this.GetComponent<SpriteRenderer>().sprite = sarcophagus1;
+        // }
         /*else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 9)
         {
             this.GetComponent<SpriteRenderer>().sprite = Screen;

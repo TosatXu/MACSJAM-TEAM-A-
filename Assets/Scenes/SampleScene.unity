@@ -842,6 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   collisionLayer: 0
+  collisionObject: {fileID: 0}
 --- !u!50 &311009427
 Rigidbody2D:
   serializedVersion: 5
@@ -1177,18 +1178,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2103933037}
-        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
-        m_MethodName: destroySelf
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1884578580}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
         m_MethodName: destroySelf
         m_Mode: 1
@@ -6078,6 +6067,7 @@ MonoBehaviour:
   canyon: {fileID: -2463653405192164058, guid: e489cc41f41a95d478af36101aff17ea, type: 3}
   tunnel: {fileID: -6705639023677779174, guid: 63e30c28f6852ce429d12cc1f70e8d16, type: 3}
   cave: {fileID: 1637522544895269989, guid: b928a22efb618ac409e9c079b71a6085, type: 3}
+  sarcophagus1Target: {fileID: 1884578580}
   collider1: {fileID: 311009422}
   collider2: {fileID: 2051082559}
   audioManager: {fileID: 890332512}
@@ -6661,6 +6651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   collisionLayer: 0
+  collisionObject: {fileID: 0}
 --- !u!61 &2051082563
 BoxCollider2D:
   m_ObjectHideFlags: 0

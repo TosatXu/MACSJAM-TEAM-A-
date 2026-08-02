@@ -9,7 +9,9 @@ public class Destroy : MonoBehaviour
     public GameObject map;
     public Vector3 spawnPoint;
 
-    void OnTriggerStay2D(Collider2D collision)
+    private bool hasTriggered;
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 3)
         {
@@ -17,8 +19,9 @@ public class Destroy : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.layer == 3)
         overlap = false;
     }
 
@@ -26,16 +29,48 @@ public class Destroy : MonoBehaviour
     {
         if (overlap)
         {
-            if (monster != null)
-            {
-                Instantiate(monster, this.transform.position + spawnPoint, this.transform.rotation, map.transform);
-            }
-            if (text != null)
-            {
-                Instantiate(text);
-            }
-            transform.DetachChildren();
-            this.gameObject.SetActive(false);
+            TriggerItem();
+            // if (monster != null)
+            // {
+            //     Instantiate(monster, this.transform.position + spawnPoint, this.transform.rotation, map.transform);
+            // }
+            // if (text != null)
+            // {
+            //     Instantiate(text);
+            // }
+            // transform.DetachChildren();
+            // this.gameObject.SetActive(false);
         }
+    }
+
+    public void TriggerFromPhoto()
+    {
+        TriggerItem();
+    }
+
+    private void TriggerItem()
+    {
+        if (hasTriggered)
+            return;
+
+        hasTriggered = true;
+
+        if (monster != null)
+        {
+            Transform parent = map != null ? map.transform : null;
+
+            Instantiate(
+                monster,
+                transform.position + spawnPoint,
+                transform.rotation,
+                parent
+            );
+        }
+
+        if (text != null)
+            Instantiate(text);
+
+        transform.DetachChildren();
+        gameObject.SetActive(false);
     }
 }
