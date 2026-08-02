@@ -61,7 +61,7 @@ public class CameraDisplay : MonoBehaviour
         if (sarcophagus1Target != null &&
             photographedItem == sarcophagus1Target)
         {
-            GetComponent<SpriteRenderer>().sprite = sarcophagus1;
+            GetComponent<SpriteRenderer>().sprite = tunnel;
 
             sarcophagus1Target.TriggerFromPhoto();
 
@@ -106,10 +106,10 @@ public class CameraDisplay : MonoBehaviour
         // {
         //     this.GetComponent<SpriteRenderer>().sprite = sarcophagus1;
         // }
-        /*else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 9)
-        {
-            this.GetComponent<SpriteRenderer>().sprite = Screen;
-        }*/
+        //else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 9)
+        //{
+        //    this.GetComponent<SpriteRenderer>().sprite = tunnel;
+        //}
         else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 6)
         {
             this.GetComponent<SpriteRenderer>().sprite = cliff;
