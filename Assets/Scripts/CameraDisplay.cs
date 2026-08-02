@@ -40,15 +40,22 @@ public class CameraDisplay : MonoBehaviour
     {
         timer = 2f;
 
-        CollisionDetector frontDetector =
+        CollisionDetector frontDetector1 =
         collider1.GetComponent<CollisionDetector>();
+        CollisionDetector frontDetector2 =
+        collider2.GetComponent<CollisionDetector>();
 
         Destroy photographedItem = null;
 
-        if (frontDetector.collisionObject != null)
+        if (frontDetector1.collisionObject != null)
         {
             photographedItem =
-                frontDetector.collisionObject.GetComponentInParent<Destroy>();
+                frontDetector1.collisionObject.GetComponentInParent<Destroy>();
+        }
+        if (frontDetector2.collisionObject != null)
+        {
+            photographedItem =
+                frontDetector2.collisionObject.GetComponentInParent<Destroy>();
         }
 
         if (sarcophagus1Target != null &&
@@ -58,10 +65,12 @@ public class CameraDisplay : MonoBehaviour
 
             sarcophagus1Target.TriggerFromPhoto();
 
-            frontDetector.collisionLayer = 0;
-            frontDetector.collisionObject = null;
+            frontDetector1.collisionLayer = 0;
+            frontDetector1.collisionObject = null;
+            frontDetector2.collisionLayer = 0;
+            frontDetector2.collisionObject = null;
         }
-        else if (frontDetector.collisionLayer == 6)
+        else if (frontDetector1.collisionLayer == 6)
         {
             GetComponent<SpriteRenderer>().sprite = wall;
         }
@@ -89,7 +98,7 @@ public class CameraDisplay : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = desert;
         }
-        else if (frontDetector.collisionLayer == 9)
+        else if (frontDetector1.collisionLayer == 9)
         {
             GetComponent<SpriteRenderer>().sprite = sarcophagus2;
         }
