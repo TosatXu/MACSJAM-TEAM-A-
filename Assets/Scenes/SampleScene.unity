@@ -6353,7 +6353,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8, y: 5.26}
+  m_Size: {x: 1.5, y: 0.9975}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -6387,6 +6387,7 @@ MonoBehaviour:
   canyon: {fileID: -2463653405192164058, guid: e489cc41f41a95d478af36101aff17ea, type: 3}
   tunnel: {fileID: -6705639023677779174, guid: 63e30c28f6852ce429d12cc1f70e8d16, type: 3}
   cave: {fileID: 1637522544895269989, guid: b928a22efb618ac409e9c079b71a6085, type: 3}
+  face: {fileID: -1000236996495810764, guid: 2c31a749ba331ab458a155bbe0a66089, type: 3}
   sarcophagus1Target: {fileID: 1884578580}
   collider1: {fileID: 311009422}
   collider2: {fileID: 2051082559}
