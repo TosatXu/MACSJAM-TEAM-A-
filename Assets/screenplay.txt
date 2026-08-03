@@ -19,6 +19,11 @@ As you pick up a metal device, a sudden gale rips it from your arms and carries 
 
 
 The Device:
-The device remembers everything. Each strike of sand against its skin, each strike denting its chassis, each lie and each truth spilled through its circuits.
+The device remembers everything. Each strike of sand against its skin, each strike denting its chassis, each lie and each truth transmitted through its circuits.
 
 Of course, there was never a signal, but you wanted to believe. You were always a liar, maybe that's the reason your makers abandoned you.
+
+Around you, the desert evaporates into the wind, then falls back down in shards, it has done so for longer than you can remember. 
+
+
+End:
