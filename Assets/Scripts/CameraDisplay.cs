@@ -46,21 +46,21 @@ public class CameraDisplay : MonoBehaviour
         CollisionDetector frontDetector2 =
         collider2.GetComponent<CollisionDetector>();
 
-        Destroy photographedItem = null;
+        Destroy photographedItem1 = null;
+        Destroy photographedItem2 = null;
 
         if (frontDetector1.collisionObject != null)
         {
-            photographedItem =
+            photographedItem1 =
                 frontDetector1.collisionObject.GetComponentInParent<Destroy>();
         }
         if (frontDetector2.collisionObject != null)
         {
-            photographedItem =
+            photographedItem2 =
                 frontDetector2.collisionObject.GetComponentInParent<Destroy>();
         }
 
-        if (sarcophagus1Target != null &&
-            photographedItem == sarcophagus1Target)
+        if (sarcophagus1Target != null && photographedItem1 == sarcophagus1Target || photographedItem2 == sarcophagus1Target)
         {
             GetComponent<SpriteRenderer>().sprite = tunnel;
 
