@@ -15,6 +15,10 @@ Your detect a metallic object beneath your wheels. Just scrap.
 
 
 Ending:
-As you pick up a heavy metal device, a sudden gale rips it from your arms and carries it towards the south.
+As you pick up a metal device, a sudden gale rips it from your arms and carries it towards the south.
+
 
 The Device:
+The device remembers everything. Each strike of sand against its skin, each strike denting its chassis, each lie and each truth spilled through its circuits.
+
+Of course, there was never a signal, but you wanted to believe. You were always a liar, maybe that's the reason your makers abandoned you.
