@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b8551c75823fe8e40afc72d50c9b97b0
+guid: 15e85f2d657bde54caf6d8624e708e66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6029789976602179803
-    second: Valley-of-the-queens-dithered_0
+      213: 5796508233773323742
+    second: Intro2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Valley-of-the-queens-dithered_0
+      name: Intro2_0
       rect:
         serializedVersion: 2
-        x: 134
+        x: 0
         y: 0
-        width: 666
-        height: 526
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        width: 800
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd87599590e1ea350800000000000000
-      internalID: 6029789976602179803
+      spriteID: ed59fa30785517050800000000000000
+      internalID: 5796508233773323742
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 458d29d6c084a864ea81fd1b33066e4c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Valley-of-the-queens-dithered_0: 6029789976602179803
+      Intro2_0: 5796508233773323742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
