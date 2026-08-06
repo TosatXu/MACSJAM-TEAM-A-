@@ -6,6 +6,10 @@ You are a BioRover - a cybernetic Mars exploration rover with semi-organic compu
 You receive a signal from within the dunes. You can't quite make out its contents, but its texture somehow feels familiar, embracing you in its warmth. After all these eons, you wonder if even you can feel abandoned. You must find the source of this signal.
 
 
+Ruins:
+Ruins of an ancient temple. Nothing of interest.
+
+
 Carcass:
 A carcass lays in the dust. You're not sure what it used to be, but it is not the source of the signal.
 
