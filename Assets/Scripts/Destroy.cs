@@ -68,7 +68,7 @@ public class Destroy : MonoBehaviour
         }
 
         if (text != null)
-            Instantiate(text);
+            text.SetActive(true);
 
         transform.DetachChildren();
         gameObject.SetActive(false);
