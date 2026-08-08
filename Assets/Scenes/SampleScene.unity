@@ -1076,7 +1076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &174197927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1944,8 +1944,8 @@ Transform:
   m_GameObject: {fileID: 419831782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.97, y: -3.97, z: 0}
-  m_LocalScale: {x: 0.27638772, y: 0.36446732, z: 0.30372277}
+  m_LocalPosition: {x: 6.094, y: -4.01, z: 0}
+  m_LocalScale: {x: 0.29985306, y: 0.3954106, z: 0.32950884}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 859269385}
@@ -2088,7 +2088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 573, y: 192}
+  m_AnchoredPosition: {x: -158, y: 45}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484285609
@@ -3212,6 +3212,7 @@ Transform:
   - {fileID: 254023088}
   - {fileID: 372541894}
   - {fileID: 419831783}
+  - {fileID: 1094964338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890332512
@@ -4102,12 +4103,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094964336}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.304, y: -3.277, z: 0}
-  m_LocalScale: {x: 0.50693643, y: 0.5272139, z: 0.50693643}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.084559, y: -3.9970002, z: 0}
+  m_LocalScale: {x: 0.54997534, y: 0.57197434, z: 0.54997534}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 859269385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116650297
 GameObject:
@@ -6270,7 +6271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 819, y: 139}
+  m_AnchoredPosition: {x: 703, y: 139}
   m_SizeDelta: {x: 150, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496147142
@@ -8502,4 +8503,3 @@ SceneRoots:
   - {fileID: 784111649}
   - {fileID: 1302827630}
   - {fileID: 1227195789}
-  - {fileID: 1094964338}
