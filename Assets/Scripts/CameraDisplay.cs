@@ -6,6 +6,8 @@ public class CameraDisplay : MonoBehaviour
     public Sprite Screen;
     public Sprite expanse1;
     public Sprite expanse2;
+    public Sprite expanse2figures;
+    public Sprite expanse3figures;
     public Sprite expanse3;
     public Sprite expanseFinal;
     public Sprite cliff;
@@ -40,6 +42,8 @@ public class CameraDisplay : MonoBehaviour
     public void ShowImage()
     {
         timer = 2f;
+        int randomNum = Random.Range(0, 4);
+        Debug.Log(randomNum);
 
         CollisionDetector frontDetector1 =
         collider1.GetComponent<CollisionDetector>();
@@ -131,15 +135,37 @@ public class CameraDisplay : MonoBehaviour
         {
             if (collider1.GetComponent<CollisionDetector>().collisionLayer == 13 || collider2.GetComponent<CollisionDetector>().collisionLayer == 13)
             {
-                this.GetComponent<SpriteRenderer>().sprite = expanse1;
+
+                if (randomNum == 2)
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse2figures;
+                }
+                else
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse1;
+                }
             }
             else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 14 || collider2.GetComponent<CollisionDetector>().collisionLayer == 14)
             {
-                this.GetComponent<SpriteRenderer>().sprite = expanse2;
+                if (randomNum == 2)
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse2figures;
+                }
+                else
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse2;
+                }
             }
             else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 15 || collider2.GetComponent<CollisionDetector>().collisionLayer == 15)
             {
-                this.GetComponent<SpriteRenderer>().sprite = expanse3;
+                if (randomNum == 2)
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse3figures;
+                }
+                else
+                {
+                    this.GetComponent<SpriteRenderer>().sprite = expanse3;
+                }
             }
             else
             {
