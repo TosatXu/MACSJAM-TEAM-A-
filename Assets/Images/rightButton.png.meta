@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2232cd3701195664db3c772b854d3fc7
+guid: fc33009a676dbb84f937d88314abd351
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3411466428240651181
-    second: cameracordDown_0
+      213: -6585629382172059818
+    second: Year rightButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cameracordDown_0
+      name: Year rightButton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 100
-        height: 420
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da3647a44a6f75f20800000000000000
-      internalID: 3411466428240651181
+      spriteID: 657524518f42b94a0800000000000000
+      internalID: -6585629382172059818
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 960bdf50558c70e46adfc8dc6dc4eae5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cameracordDown_0: 3411466428240651181
+      Year rightButton_0: -6585629382172059818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
