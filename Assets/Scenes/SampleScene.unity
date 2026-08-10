@@ -680,7 +680,6 @@ MonoBehaviour:
   player: {fileID: 1013705694}
   detectorLight: {fileID: 166039964}
   detectionRadius: 4.8
-  halfDetectionAngle: 45
   sameCellHalfSize: 0.24
 --- !u!1 &124904270
 GameObject:
@@ -4077,7 +4076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &998861371
 MonoBehaviour:
   m_ObjectHideFlags: 0
