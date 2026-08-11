@@ -50,6 +50,20 @@ public class CameraDisplay : MonoBehaviour
         CollisionDetector frontDetector2 =
         collider2.GetComponent<CollisionDetector>();
 
+        // Find the nearest item captured by the camera
+        RadarTarget photographedTarget = frontDetector1.GetNearestRadarTarget();
+
+        if (photographedTarget == null)
+        {
+            photographedTarget = frontDetector2.GetNearestRadarTarget();
+        }
+
+        // Reveal the photographed item in the game world
+        if (photographedTarget != null)
+        {
+            photographedTarget.Reveal();
+        }
+
         Destroy photographedItem1 = null;
         Destroy photographedItem2 = null;
 

@@ -13,6 +13,8 @@ public class RadarTarget : MonoBehaviour
 
     // Records whether this item has been collected
     public bool IsCollected { get; private set; }
+    // Records whether this item has been revealed
+    public bool IsRevealed { get; private set; }
 
     // Only active and uncollected items can be detected
     public bool IsAvailable => isActiveAndEnabled && !IsCollected;
@@ -40,7 +42,7 @@ public class RadarTarget : MonoBehaviour
 
     private void OnEnable()
     {
-        if (hideWorldSpriteAtRuntime && worldSpriteRenderer != null)
+        if (hideWorldSpriteAtRuntime && !IsRevealed && worldSpriteRenderer != null)
         {
             // Hide only the sprite
             worldSpriteRenderer.enabled = false;
@@ -55,5 +57,16 @@ public class RadarTarget : MonoBehaviour
 
         IsCollected = true;
         Collected?.Invoke(this);
+    }
+
+    public void Reveal()
+    {
+        // Show the item after it is photographed
+        IsRevealed = true;
+
+        if (worldSpriteRenderer != null)
+        {
+            worldSpriteRenderer.enabled = true;
+        }
     }
 }
