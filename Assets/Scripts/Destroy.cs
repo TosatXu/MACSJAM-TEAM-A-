@@ -9,6 +9,10 @@ public class Destroy : MonoBehaviour
     public GameObject map;
     public Vector3 spawnPoint;
 
+    // Keeps this object visible after its event is triggered
+    [SerializeField]
+    private bool keepVisibleAfterTrigger;
+
     private bool hasTriggered;
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -70,7 +74,11 @@ public class Destroy : MonoBehaviour
         if (text != null)
             text.SetActive(true);
 
-        transform.DetachChildren();
-        gameObject.SetActive(false);
+        // Hide the object unless it should remain visible
+        if (!keepVisibleAfterTrigger)
+        {
+            transform.DetachChildren();
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -17,7 +17,7 @@ public class RadarTarget : MonoBehaviour
     public bool IsRevealed { get; private set; }
 
     // Only active and uncollected items can be detected
-    public bool IsAvailable => isActiveAndEnabled && !IsCollected;
+    public bool IsAvailable => isActiveAndEnabled && !IsCollected && !IsRevealed;
 
     // Current world position used by the detector
     public Vector2 WorldPosition => transform.position;
