@@ -34,14 +34,14 @@ public class CameraDisplay : MonoBehaviour
     public void takePicture()
     {
         if (timer < 0) {
+            timer = 2.2f;
             audioManager.GetComponent<AudioManager>().PlayCamera();
-            Invoke("ShowImage", 0.3f);
+            Invoke("ShowImage", 0.2f);
         }
     }
 
     public void ShowImage()
     {
-        timer = 2f;
         int randomNum = Random.Range(0, 4);
         Debug.Log(randomNum);
 
