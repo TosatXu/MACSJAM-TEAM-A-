@@ -1984,7 +1984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.0900002, y: 10}
+  m_AnchoredPosition: {x: 3.0899963, y: 10}
   m_SizeDelta: {x: 104.96, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368104720
@@ -2009,7 +2009,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 7663716657594226560, guid: 55fb4583e6015ce46b88b5ff845a1089, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2111,8 +2111,8 @@ Transform:
   m_GameObject: {fileID: 372541892}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32209992, y: -0.27999997, z: 0}
-  m_LocalScale: {x: 0.91, y: 1.2, z: 1}
+  m_LocalPosition: {x: -0.1997, y: 0.1626, z: 0}
+  m_LocalScale: {x: 0.87131494, y: 1.0839027, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 859269385}
@@ -3026,8 +3026,8 @@ Transform:
   m_GameObject: {fileID: 524793430}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.76, y: 1.35, z: 1}
-  m_LocalScale: {x: 8.014003, y: 8.092501, z: 1}
+  m_LocalPosition: {x: -4.6366, y: 1.7962, z: 1}
+  m_LocalScale: {x: 7.6733193, y: 7.309569, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -3530,10 +3530,10 @@ RectTransform:
   - {fileID: 368104719}
   m_Father: {fileID: 1399717709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -20}
+  m_SizeDelta: {x: 200, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &619394800
 GameObject:
@@ -4400,8 +4400,8 @@ Transform:
   m_GameObject: {fileID: 966926057}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32209992, y: -0.27999997, z: 0}
-  m_LocalScale: {x: 0.91, y: 1.2, z: 1}
+  m_LocalPosition: {x: -0.1997, y: 0.1626, z: 0}
+  m_LocalScale: {x: 0.87131494, y: 1.0839027, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 859269385}
@@ -4546,7 +4546,7 @@ Transform:
   m_GameObject: {fileID: 1013705693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9851, y: 0.40000004, z: 0}
+  m_LocalPosition: {x: -3.9329998, y: 0.9500002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4929,8 +4929,8 @@ Transform:
   m_GameObject: {fileID: 1116650297}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.76, y: 1.35, z: 1}
-  m_LocalScale: {x: 8.014003, y: 8.092501, z: 1}
+  m_LocalPosition: {x: -4.6366, y: 1.7962, z: 1}
+  m_LocalScale: {x: 7.6733193, y: 7.309569, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -6232,6 +6232,7 @@ GameObject:
   - component: {fileID: 1399717709}
   - component: {fileID: 1399717711}
   - component: {fileID: 1399717710}
+  - component: {fileID: 1399717712}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -6337,6 +6338,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1399717712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399717708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1399717710}
+          m_TargetAssemblyTypeName: Cord, Assembly-CSharp
+          m_MethodName: isPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1399717710}
+          m_TargetAssemblyTypeName: Cord, Assembly-CSharp
+          m_MethodName: isNotPressed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1435179663
 GameObject:
   m_ObjectHideFlags: 0
@@ -6941,11 +6987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7118181429892417582, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.5421
+      value: -8.49
       objectReference: {fileID: 0}
     - target: {fileID: -7118181429892417582, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.95
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: -7118181429892417582, guid: acd8c2990d5d0d140a25de25cf50de8d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8245,7 +8291,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.38, y: -3.52, z: 1}
-  m_LocalScale: {x: 6.54326, y: 1.6712873, z: 1}
+  m_LocalScale: {x: 6.54326, y: 2.8746142, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
@@ -9433,8 +9479,8 @@ Transform:
   m_GameObject: {fileID: 1904293678}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7361703, y: -3.6041098, z: 0}
-  m_LocalScale: {x: 1.1663479, y: 1.6764547, z: 1}
+  m_LocalPosition: {x: -4.61365, y: -3.1504, z: 0}
+  m_LocalScale: {x: 1.1165607, y: 3.470905, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479060469}
