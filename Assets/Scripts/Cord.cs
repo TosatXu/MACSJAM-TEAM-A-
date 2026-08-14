@@ -20,8 +20,8 @@ public class Cord : MonoBehaviour
         if (!pressed)
         {
             gameObject.GetComponent<Slider>().value -= 0.01f + ((gameObject.GetComponent<Slider>().value - 0.5f) / 10f);
-            gameObject.GetComponent<Slider>().value = Mathf.Clamp(gameObject.GetComponent<Slider>().value, 0.5f, 1f);
         }
+        gameObject.GetComponent<Slider>().value = Mathf.Clamp(gameObject.GetComponent<Slider>().value, 0.5f, 1f);
     }
 
     public void activateCamera ()

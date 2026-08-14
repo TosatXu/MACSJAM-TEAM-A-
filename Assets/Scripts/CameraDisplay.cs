@@ -34,9 +34,9 @@ public class CameraDisplay : MonoBehaviour
     public void takePicture()
     {
         if (timer < 0) {
-            timer = 2.3f;
+            timer = 2.2f;
             audioManager.GetComponent<AudioManager>().PlayCamera();
-            Invoke("ShowImage", 0.3f);
+            Invoke("ShowImage", 0.2f);
         }
     }
 
