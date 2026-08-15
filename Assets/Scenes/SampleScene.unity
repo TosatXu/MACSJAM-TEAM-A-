@@ -699,6 +699,7 @@ Transform:
   - {fileID: 1094964338}
   - {fileID: 873057740}
   - {fileID: 1991043086}
+  - {fileID: 1104637139}
   m_Father: {fileID: 859269385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &117393889
@@ -715,6 +716,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RadarController
   player: {fileID: 1013705694}
   detectorLight: {fileID: 166039964}
+  itemBlipPrefab: {fileID: 1877803274010626331, guid: 1ea99f3b7d1a1f946b855dbccc3082a1, type: 3}
+  blipContainer: {fileID: 1104637139}
+  radarCircles: {fileID: 873057739}
+  positionDetectionRadius: 1.92
+  radarVisualRadius: 1.15
   detectionRadius: 4.8
   sameCellHalfSize: 0.24
 --- !u!1 &124904270
@@ -1269,7 +1275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &174197927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4997,6 +5003,37 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.61560386, y: 0.64022803, z: 0.61560386}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 117393888}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1104637138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104637139}
+  m_Layer: 0
+  m_Name: RadarBlips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1104637139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104637138}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 117393888}

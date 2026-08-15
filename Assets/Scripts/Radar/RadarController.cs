@@ -12,6 +12,30 @@ public class RadarController : MonoBehaviour
     [SerializeField]
     private RadarBlip detectorLight;
 
+    [Header("Position Radar References")]
+
+    // Prefab used for each item position dot
+    [SerializeField]
+    private RadarBlip itemBlipPrefab;
+
+    // Parent object that holds all generated item dots
+    [SerializeField]
+    private Transform blipContainer;
+
+    // Radar circles shown during close-range detection
+    [SerializeField]
+    private GameObject radarCircles;
+
+    [Header("Position Radar Settings")]
+
+    // Four grid cells: 4 x 0.48 = 1.92 world units
+    [SerializeField, Min(0.01f)]
+    private float positionDetectionRadius = 1.92f;
+
+    // Maximum distance from the radar centre to its edge
+    [SerializeField, Min(0.01f)]
+    private float radarVisualRadius = 1.15f;
+
     [Header("Detection Settings")]
     // Maximum detection range, currently about ten grid cells
     [SerializeField, Min(0.01f)]
@@ -23,12 +47,42 @@ public class RadarController : MonoBehaviour
 
     private RadarTarget[] targets;
 
+    private RadarBlip[] itemBlips;
+    
     private void Awake()
     {
         // Find both active and temporarily inactive targets
-        targets = FindObjectsByType<RadarTarget>( FindObjectsInactive.Include );
+        targets = FindObjectsByType<RadarTarget>(
+            FindObjectsInactive.Include
+        );
 
+        // Prepare one position dot for every target
+        itemBlips = new RadarBlip[targets.Length];
+
+        if (itemBlipPrefab != null && blipContainer != null)
+        {
+            for (int i = 0; i < targets.Length; i++)
+            {
+                if (targets[i] == null)
+                    continue;
+
+                RadarBlip newBlip = Instantiate(itemBlipPrefab, blipContainer);
+
+                // Give each generated dot an easy-to-read name
+                newBlip.name = "ItemBlip_" + targets[i].gameObject.name;
+
+                newBlip.gameObject.SetActive(false);
+                itemBlips[i] = newBlip;
+            }
+        }
+
+        // Start with both radar displays hidden
         SetLightActive(false);
+
+        if (radarCircles != null)
+        {
+            radarCircles.SetActive(false);
+        }
     }
 
     private void LateUpdate()
@@ -40,6 +94,8 @@ public class RadarController : MonoBehaviour
         }
 
         Vector2 playerPosition = player.position;
+
+        UpdatePositionRadar(playerPosition);
 
         float detectionRadiusSquared = detectionRadius * detectionRadius;
 
@@ -71,8 +127,7 @@ public class RadarController : MonoBehaviour
             {
                 // Use the nearest target within the 360-degree range
                 nearestTarget = target;
-                nearestDistanceSquared =
-                    distanceSquared;
+                nearestDistanceSquared = distanceSquared;
                 nearestIsSameCell = sameCell;
             }
         }
@@ -95,6 +150,96 @@ public class RadarController : MonoBehaviour
         );
 
         SetLightActive(true);
+    }
+
+    private void UpdatePositionRadar(Vector2 playerPosition)
+    {
+        bool hasVisibleBlip = false;
+
+        if (targets == null || itemBlips == null)
+        {
+            if (radarCircles != null)
+            {
+                radarCircles.SetActive(false);
+            }
+
+            return;
+        }
+
+        float positionRadiusSquared = positionDetectionRadius * positionDetectionRadius;
+
+        int targetCount = Mathf.Min(targets.Length, itemBlips.Length);
+
+        for (int i = 0; i < targetCount; i++)
+        {
+            RadarTarget target = targets[i];
+            RadarBlip blip = itemBlips[i];
+
+            if (blip == null)
+                continue;
+
+            // Hide dots for missing, collected or revealed items
+            if (target == null || !target.IsAvailable)
+            {
+                SetItemBlipActive(blip, false);
+                continue;
+            }
+
+            Vector2 difference =
+                target.WorldPosition - playerPosition;
+
+            float distanceSquared = difference.sqrMagnitude;
+
+            // Do not reveal the position outside four grid cells
+            if (distanceSquared > positionRadiusSquared)
+            {
+                SetItemBlipActive(blip, false);
+                continue;
+            }
+
+            hasVisibleBlip = true;
+
+            float distance = Mathf.Sqrt(distanceSquared);
+
+            float closeness =
+                1f - Mathf.Clamp01(
+                    distance / positionDetectionRadius
+                );
+
+            bool sameCell = Mathf.Abs(difference.x) <= sameCellHalfSize && Mathf.Abs(difference.y) <= sameCellHalfSize;
+
+            // Convert the world direction into radar local position
+            Vector2 radarPosition = difference / positionDetectionRadius * radarVisualRadius;
+
+            // Keep the dot exactly in the centre on the same cell
+            if (sameCell)
+            {
+                radarPosition = Vector2.zero;
+            }
+
+            blip.transform.localPosition = new Vector3(radarPosition.x, radarPosition.y, 0f);
+
+            blip.SetState(closeness, sameCell);
+
+            SetItemBlipActive(blip, true);
+        }
+
+        // Show the radar circles only when at least one dot is visible
+        if (radarCircles != null && radarCircles.activeSelf != hasVisibleBlip)
+        {
+            radarCircles.SetActive(hasVisibleBlip);
+        }
+    }
+
+    private void SetItemBlipActive(RadarBlip blip, bool active)
+    {
+        if (blip == null)
+            return;
+
+        if (blip.gameObject.activeSelf != active)
+        {
+            blip.gameObject.SetActive(active);
+        }
     }
 
     private void OnDisable()
