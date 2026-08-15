@@ -29,7 +29,7 @@ public class Cord : MonoBehaviour
     
         if (!pressed)
         {
-            slider.value -= 0.01f + ((slider.value - 0.5f) / 10f);
+            slider.value -= 0.01f + ((slider.value - 0.4f) / 10f);
         }
 
         slider.value = Mathf.Clamp(slider.value, 0.5f, 1f);
