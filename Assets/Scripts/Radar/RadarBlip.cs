@@ -24,15 +24,28 @@ public class RadarBlip : MonoBehaviour
     [SerializeField, Range(0f, 1f)]
     private float nearMinimumAlpha = 0.65f;
 
+    [SerializeField]
+    private AudioClip pulseSound;
+
+    [SerializeField, Range(0f, 1f)]
+    private float pulseVolume = 0.35f;
+
     private SpriteRenderer spriteRenderer;
     private float closeness;
 
     // check is the player in the same grid as the player
     private bool sameCell;
 
+    private bool wasAtPulsePeak;
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void OnEnable()
+    {
+        wasAtPulsePeak = false;
     }
 
     public void SetState(
@@ -67,6 +80,19 @@ public class RadarBlip : MonoBehaviour
 
         // Smooth flickering effect
         float pulse = (Mathf.Sin(Time.time * Mathf.PI * 2f / pulsePeriod) + 1f) * 0.5f;
+
+        // Play once at each pulse peak
+        bool isAtPulsePeak = pulse >= 0.98f;
+
+        if (isAtPulsePeak && !wasAtPulsePeak && pulseSound != null && AudioManager.instance != null && AudioManager.instance.sfxSource != null)
+        {
+            AudioManager.instance.sfxSource.PlayOneShot(
+                pulseSound,
+                pulseVolume
+            );
+        }
+
+        wasAtPulsePeak = isAtPulsePeak;
 
         float minimumAlpha =
             Mathf.Lerp(
