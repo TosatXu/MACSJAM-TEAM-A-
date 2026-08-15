@@ -10,6 +10,9 @@ public class Cord : MonoBehaviour
     [SerializeField]
     private Animator cordAnimator;
 
+    [SerializeField]
+    private AudioClip triggerSound;
+
     bool pressed;
 
     // Allows only one photo per press
@@ -50,6 +53,12 @@ public class Cord : MonoBehaviour
         if (gameObject.GetComponent<Slider>().value >= 0.9f)
         {
             photoTakenThisPull = true;
+
+            if (AudioManager.instance != null && triggerSound != null)
+            {
+                AudioManager.instance.sfxSource.PlayOneShot(triggerSound);
+            }
+
             cameraScreen.GetComponent<CameraDisplay>().takePicture();
         }
     }
