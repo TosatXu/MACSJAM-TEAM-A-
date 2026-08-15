@@ -8,6 +8,9 @@ public class Cord : MonoBehaviour
     public GameObject cameraScreen;
     bool pressed;
 
+    // Allows only one photo per press
+    bool photoTakenThisPull;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,8 +29,12 @@ public class Cord : MonoBehaviour
 
     public void activateCamera ()
     {
+        if (!pressed || photoTakenThisPull)
+        return;
+
         if (gameObject.GetComponent<Slider>().value >= 0.9f)
         {
+            photoTakenThisPull = true;
             cameraScreen.GetComponent<CameraDisplay>().takePicture();
         }
     }
@@ -35,6 +42,9 @@ public class Cord : MonoBehaviour
     public void isPressed ()
     {
         pressed = true;
+
+        // Start a new pull
+        photoTakenThisPull = false;
     }
 
     public void isNotPressed ()
