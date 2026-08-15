@@ -1047,6 +1047,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1991043086}
     m_Modifications:
+    - target: {fileID: 1877803274010626331, guid: 5d78293a8e13ed4468ef5b9fa0cc8c32, type: 3}
+      propertyPath: pulseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: de7d72dd28187fd4794b6650986cf56d, type: 3}
+    - target: {fileID: 1877803274010626331, guid: 5d78293a8e13ed4468ef5b9fa0cc8c32, type: 3}
+      propertyPath: pulseVolume
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2551082163038439439, guid: 5d78293a8e13ed4468ef5b9fa0cc8c32, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.27598
@@ -6487,6 +6495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cord
   cameraScreen: {fileID: 1819566607}
   cordAnimator: {fileID: 1850919396}
+  triggerSound: {fileID: 0}
 --- !u!114 &1399717711
 MonoBehaviour:
   m_ObjectHideFlags: 0
