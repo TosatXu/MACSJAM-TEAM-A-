@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class Cord : MonoBehaviour
 {
     public GameObject cameraScreen;
+    
+    [SerializeField]
+    private Animator cordAnimator;
+
     bool pressed;
 
     // Allows only one photo per press
@@ -20,11 +24,22 @@ public class Cord : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Slider slider = GetComponent<Slider>();
+        float previousValue = slider.value;
+    
         if (!pressed)
         {
-            gameObject.GetComponent<Slider>().value -= 0.01f + ((gameObject.GetComponent<Slider>().value - 0.5f) / 10f);
+            slider.value -= 0.01f + ((slider.value - 0.5f) / 10f);
         }
-        gameObject.GetComponent<Slider>().value = Mathf.Clamp(gameObject.GetComponent<Slider>().value, 0.5f, 1f);
+
+        slider.value = Mathf.Clamp(slider.value, 0.5f, 1f);
+
+        // Play bounce after returning
+        if (!pressed && previousValue > 0.5f && slider.value <= 0.5f && cordAnimator != null)
+        {
+            cordAnimator.ResetTrigger("Bounce");
+            cordAnimator.SetTrigger("Bounce");
+        }
     }
 
     public void activateCamera ()
@@ -45,10 +60,28 @@ public class Cord : MonoBehaviour
 
         // Start a new pull
         photoTakenThisPull = false;
+
+        if (cordAnimator != null)
+        {
+            cordAnimator.ResetTrigger("Bounce");
+            cordAnimator.Play("Idle", 0, 0f);
+            cordAnimator.Update(0f);
+        }
     }
 
     public void isNotPressed ()
     {
         pressed = false;
+
+        // Start a new pull
+        photoTakenThisPull = false;
+
+        // Stop the previous bounce
+        if (cordAnimator != null)
+        {
+            cordAnimator.ResetTrigger("Bounce");
+            cordAnimator.Play("Idle", 0, 0f);
+            cordAnimator.Update(0f);
+        }
     }
 }
