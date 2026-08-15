@@ -140,6 +140,13 @@ public class RadarController : MonoBehaviour
         }
 
         float distance = Mathf.Sqrt(nearestDistanceSquared);
+        
+        // Use position dots instead of the detector light, when the nearest item is within four grid cells
+        if (distance <= positionDetectionRadius)
+        {
+            SetLightActive(false);
+            return;
+        }
 
         float closeness = 1f - Mathf.Clamp01(distance / detectionRadius);
 
@@ -185,8 +192,7 @@ public class RadarController : MonoBehaviour
                 continue;
             }
 
-            Vector2 difference =
-                target.WorldPosition - playerPosition;
+            Vector2 difference = target.WorldPosition - playerPosition;
 
             float distanceSquared = difference.sqrMagnitude;
 
