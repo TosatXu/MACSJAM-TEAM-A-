@@ -2251,7 +2251,7 @@ GameObject:
   - component: {fileID: 393497870}
   - component: {fileID: 393497869}
   - component: {fileID: 393497871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Signal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4621,9 +4621,9 @@ RectTransform:
   - {fileID: 578656023}
   - {fileID: 1864462325}
   - {fileID: 484285608}
-  - {fileID: 290394244}
   - {fileID: 1399717709}
   - {fileID: 174197927}
+  - {fileID: 290394244}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

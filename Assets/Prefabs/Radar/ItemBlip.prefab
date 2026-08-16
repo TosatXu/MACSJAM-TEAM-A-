@@ -119,7 +119,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4169477952409631078}
@@ -196,11 +196,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff9e566cdf6a894bb841fcdf9460f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RadarBlip
-  farColor: {r: 0.05, g: 0.35, b: 0.12, a: 1}
+  farColor: {r: 0.065396875, g: 0.6301887, b: 0.20155206, a: 1}
   nearColor: {r: 0.43, g: 1, b: 0.33, a: 1}
   farPulsePeriod: 1.8
   nearPulsePeriod: 0.25
   farMinimumAlpha: 0.08
   nearMinimumAlpha: 0.65
+  useHardBlink: 0
+  hardBlinkThreshold: 0.85
   pulseSound: {fileID: 0}
   pulseVolume: 0.35
