@@ -723,6 +723,8 @@ MonoBehaviour:
   radarVisualRadius: 1.15
   detectionRadius: 4.8
   sameCellHalfSize: 0.24
+  positionLockSound: {fileID: 8300000, guid: e08154c13d385f24a994bcd1c9d6f581, type: 3}
+  positionLockVolume: 0.5
 --- !u!1 &124904270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,7 +6497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cord
   cameraScreen: {fileID: 1819566607}
   cordAnimator: {fileID: 1850919396}
-  triggerSound: {fileID: 0}
+  triggerSound: {fileID: 8300000, guid: aa83f75051d6edb45b3449befdf91398, type: 3}
 --- !u!114 &1399717711
 MonoBehaviour:
   m_ObjectHideFlags: 0

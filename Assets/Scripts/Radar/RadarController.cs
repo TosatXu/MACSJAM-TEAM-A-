@@ -48,6 +48,17 @@ public class RadarController : MonoBehaviour
     private RadarTarget[] targets;
 
     private RadarBlip[] itemBlips;
+
+    [Header("Position Radar Sound")]
+
+    [SerializeField]
+    private AudioClip positionLockSound;
+
+    [SerializeField, Range(0f, 1f)]
+    private float positionLockVolume = 0.5f;
+
+    // Tracks the close radar state
+    private bool hadVisiblePositionBlip;
     
     private void Awake()
     {
@@ -230,6 +241,23 @@ public class RadarController : MonoBehaviour
             SetItemBlipActive(blip, true);
         }
 
+        // Play once when close blips first appear
+        if (
+            hasVisibleBlip &&
+            !hadVisiblePositionBlip &&
+            positionLockSound != null &&
+            AudioManager.instance != null &&
+            AudioManager.instance.sfxSource != null
+        )
+        {
+            AudioManager.instance.sfxSource.PlayOneShot(
+                positionLockSound,
+                positionLockVolume
+            );
+        }
+
+        hadVisiblePositionBlip = hasVisibleBlip;
+
         // Show the radar circles only when at least one dot is visible
         if (radarCircles != null && radarCircles.activeSelf != hasVisibleBlip)
         {
@@ -250,6 +278,7 @@ public class RadarController : MonoBehaviour
 
     private void OnDisable()
     {
+        hadVisiblePositionBlip = false;
         SetLightActive(false);
     }
 
