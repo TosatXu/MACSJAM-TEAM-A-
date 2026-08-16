@@ -24,6 +24,14 @@ public class RadarBlip : MonoBehaviour
     [SerializeField, Range(0f, 1f)]
     private float nearMinimumAlpha = 0.65f;
 
+    [Header("Blink Style")]
+
+    [SerializeField]
+    private bool useHardBlink;
+
+    [SerializeField, Range(0.5f, 0.99f)]
+    private float hardBlinkThreshold = 0.85f;
+
     [SerializeField]
     private AudioClip pulseSound;
 
@@ -81,8 +89,12 @@ public class RadarBlip : MonoBehaviour
         // Smooth flickering effect
         float pulse = (Mathf.Sin(Time.time * Mathf.PI * 2f / pulsePeriod) + 1f) * 0.5f;
 
-        // Play once at each pulse peak
-        bool isAtPulsePeak = pulse >= 0.98f;
+        // // Play once at each pulse peak
+        // bool isAtPulsePeak = pulse >= 0.98f;
+
+        float blinkThreshold = useHardBlink ? hardBlinkThreshold : 0.98f;
+
+        bool isAtPulsePeak = pulse >= blinkThreshold;
 
         if (isAtPulsePeak && !wasAtPulsePeak && pulseSound != null && AudioManager.instance != null && AudioManager.instance.sfxSource != null)
         {
@@ -101,7 +113,18 @@ public class RadarBlip : MonoBehaviour
                 closeness
             );
 
-        currentColor.a = Mathf.Lerp(minimumAlpha, 1f, pulse);
+        if (useHardBlink)
+        {
+            currentColor.a = isAtPulsePeak ? 1f : 0f;
+        }
+        else
+        {
+            currentColor.a = Mathf.Lerp(
+                minimumAlpha,
+                1f,
+                pulse
+            );
+        }
 
         spriteRenderer.color = currentColor;
     }

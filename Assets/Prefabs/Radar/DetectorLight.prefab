@@ -110,5 +110,7 @@ MonoBehaviour:
   nearPulsePeriod: 0.25
   farMinimumAlpha: 0.08
   nearMinimumAlpha: 0.65
+  useHardBlink: 1
+  hardBlinkThreshold: 0.6
   pulseSound: {fileID: 0}
   pulseVolume: 0.35
