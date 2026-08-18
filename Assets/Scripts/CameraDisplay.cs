@@ -240,7 +240,7 @@ public class CameraDisplay : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        if(timer < 0.5f)
+        if(timer < 0.3f)
         {
             this.GetComponent<SpriteRenderer>().sprite = Screen;
         }
