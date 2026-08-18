@@ -1,5 +1,6 @@
 using NUnit.Framework.Constraints;
 using UnityEngine;
+using System.Collections;
 
 public class CameraDisplay : MonoBehaviour
 {
@@ -31,13 +32,59 @@ public class CameraDisplay : MonoBehaviour
     public GameObject audioManager;
     public GameObject rover;
 
+    [Header("Photo Flash")]
+    [SerializeField] private SpriteRenderer flashOverlay;
+    [SerializeField] private float flashHoldTime = 0.05f;
+    [SerializeField] private float flashFadeTime = 0.15f;
+
     public void takePicture()
     {
         if (timer < 0) {
             timer = 2.2f;
             audioManager.GetComponent<AudioManager>().PlayCamera();
-            Invoke("ShowImage", 0.2f);
+            // Invoke("ShowImage", 0.2f);
+            StartCoroutine(PhotoSequence());
         }
+    }
+
+    private IEnumerator PhotoSequence()
+    {
+        if (flashOverlay == null)
+        {
+            yield return new WaitForSeconds(flashHoldTime + flashFadeTime);
+            ShowImage();
+            yield break;
+        }
+
+        flashOverlay.enabled = true;
+
+        Color flashColor = flashOverlay.color;
+        flashColor.a = 1f;
+        flashOverlay.color = flashColor;
+
+        // Keep the flash bright for a moment.
+        yield return new WaitForSeconds(flashHoldTime);
+
+        ShowImage();
+
+        // Fade the flash out.
+        float elapsed = 0f;
+        
+
+        while (elapsed < flashFadeTime)
+        {
+            elapsed += Time.deltaTime;
+            float progress = Mathf.Clamp01(elapsed / flashFadeTime);
+
+            flashColor.a = Mathf.Lerp(1f, 0f, progress);
+            flashOverlay.color = flashColor;
+
+            yield return null;
+        }
+
+        flashColor.a = 0f;
+        flashOverlay.color = flashColor;
+        flashOverlay.enabled = false;
     }
 
     public void ShowImage()
