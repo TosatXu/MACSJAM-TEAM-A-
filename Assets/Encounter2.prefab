@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6108528464942598356}
   - component: {fileID: -7139598808306208377}
   - component: {fileID: 6950655209955995614}
+  - component: {fileID: -3331651395732065514}
   m_Layer: 12
   m_Name: Encounter2
   m_TagString: Untagged
@@ -182,3 +183,17 @@ MonoBehaviour:
   direction: {x: 0, y: -1, z: 0}
   moveTotal: 5
   moveTimeIncrement: 2
+--- !u!114 &-3331651395732065514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312491533174367668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9bca87badcf4a44bce4faeff286b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RadarTarget
+  hideWorldSpriteAtRuntime: 1
+  worldSpriteRenderer: {fileID: 7583452334272950382}

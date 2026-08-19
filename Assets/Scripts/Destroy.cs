@@ -61,14 +61,15 @@ public class Destroy : MonoBehaviour
 
         if (monster != null)
         {
-            Transform parent = map != null ? map.transform : null;
+            /*Transform parent = map != null ? map.transform : null;
 
             Instantiate(
                 monster,
                 transform.position + spawnPoint,
                 transform.rotation,
                 parent
-            );
+            );*/
+            monster.SetActive(true);
         }
 
         if (text != null)

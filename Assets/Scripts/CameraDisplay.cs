@@ -160,13 +160,21 @@ public class CameraDisplay : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = carcass;
         }
-        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 8)
-        {
-            this.GetComponent<SpriteRenderer>().sprite = desert;
-        }
         else if (frontDetector1.collisionLayer == 9)
         {
             GetComponent<SpriteRenderer>().sprite = sarcophagus2;
+        }
+        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 17)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = tunnel;
+        }
+        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 17)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = cave;
+        }
+        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 8)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = desert;
         }
         // else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 9)
         // {
@@ -183,14 +191,6 @@ public class CameraDisplay : MonoBehaviour
         else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 16)
         {
             this.GetComponent<SpriteRenderer>().sprite = canyon;
-        }
-        else if (collider1.GetComponent<CollisionDetector>().collisionLayer == 17)
-        {
-            this.GetComponent<SpriteRenderer>().sprite = tunnel;
-        }
-        else if (collider2.GetComponent<CollisionDetector>().collisionLayer == 17)
-        {
-            this.GetComponent<SpriteRenderer>().sprite = cave;
         }
         else
         {
