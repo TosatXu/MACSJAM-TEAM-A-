@@ -9112,7 +9112,7 @@ MonoBehaviour:
   audioManager: {fileID: 890332512}
   rover: {fileID: 1013705693}
   flashOverlay: {fileID: 1916242858}
-  flashHoldTime: 0.2
+  flashHoldTime: 0.1
   flashFadeTime: 0.2
 --- !u!1 &1829119785
 GameObject:
