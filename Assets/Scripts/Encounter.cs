@@ -10,7 +10,8 @@ public class Encounter3 : MonoBehaviour
 
     private void Start()
     {
-        move();
+        AudioManager.instance.PlayMonsterRoar();
+        Invoke("move", moveTimeIncrement);
     }
 
     private void move ()
