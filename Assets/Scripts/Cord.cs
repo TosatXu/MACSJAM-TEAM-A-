@@ -13,21 +13,44 @@ public class Cord : MonoBehaviour
     [SerializeField]
     private AudioClip triggerSound;
 
-    bool pressed;
+    [Header("Cord Sound")]
+    [SerializeField] 
+    private AudioSource cordAudioSource;
+    
+    [SerializeField] 
+    private float soundStopDelay = 0.18f;
 
+
+    private Slider slider;
+    private bool pressed;
     // Allows only one photo per press
-    bool photoTakenThisPull;
+    private bool photoTakenThisPull;
+    private float previousCordValue;
+    private float lastMovementTime;
+   
+
+    private void Awake()
+    {
+        slider = GetComponent<Slider>();
+
+        if (cordAudioSource != null)
+        {
+            cordAudioSource.playOnAwake = false;
+            cordAudioSource.loop = true;
+            cordAudioSource.spatialBlend = 0f;
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameObject.GetComponent<Slider>().value = 0.5f;
+        slider.value = 0.5f;
+        previousCordValue = slider.value;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Slider slider = GetComponent<Slider>();
         float previousValue = slider.value;
     
         if (!pressed)
@@ -43,6 +66,28 @@ public class Cord : MonoBehaviour
             cordAnimator.ResetTrigger("Bounce");
             cordAnimator.SetTrigger("Bounce");
         }
+
+        float currentValue = slider.value;
+        bool cordMoved = !Mathf.Approximately(currentValue, previousCordValue);
+
+        if (cordMoved)
+        {
+            lastMovementTime = Time.unscaledTime;
+
+            if (cordAudioSource != null && cordAudioSource.clip != null && !cordAudioSource.isPlaying)
+            {
+                // Play while the cord moves.
+                cordAudioSource.Play();
+            }
+        }
+
+        previousCordValue = currentValue;
+
+        if (cordAudioSource != null && cordAudioSource.isPlaying && Time.unscaledTime - lastMovementTime > soundStopDelay)
+        {
+            // Stop after the cord stops.
+            cordAudioSource.Stop();
+        }
     }
 
     public void activateCamera ()
@@ -50,11 +95,11 @@ public class Cord : MonoBehaviour
         if (!pressed || photoTakenThisPull)
         return;
 
-        if (gameObject.GetComponent<Slider>().value >= 0.9f)
+        if (slider.value >= 0.9f)
         {
             photoTakenThisPull = true;
 
-            if (AudioManager.instance != null && triggerSound != null)
+            if (AudioManager.instance != null && AudioManager.instance.sfxSource != null && triggerSound != null)
             {
                 AudioManager.instance.sfxSource.PlayOneShot(triggerSound);
             }
@@ -66,9 +111,9 @@ public class Cord : MonoBehaviour
     public void isPressed ()
     {
         pressed = true;
-
         // Start a new pull
         photoTakenThisPull = false;
+        previousCordValue = slider.value;
 
         if (cordAnimator != null)
         {
@@ -91,6 +136,16 @@ public class Cord : MonoBehaviour
             cordAnimator.ResetTrigger("Bounce");
             cordAnimator.Play("Idle", 0, 0f);
             cordAnimator.Update(0f);
+        }
+    }
+
+    private void OnDisable()
+    {
+        pressed = false;
+
+        if (cordAudioSource != null)
+        {
+            cordAudioSource.Stop();
         }
     }
 }
